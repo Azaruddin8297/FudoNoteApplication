@@ -1,0 +1,10 @@
+D:\CFP\FundoNoteApplication\CommonLayer\bin\Debug\netcoreapp3.1\CommonLayer.deps.json
+D:\CFP\FundoNoteApplication\CommonLayer\bin\Debug\netcoreapp3.1\CommonLayer.dll
+D:\CFP\FundoNoteApplication\CommonLayer\bin\Debug\netcoreapp3.1\CommonLayer.pdb
+D:\CFP\FundoNoteApplication\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.csproj.AssemblyReference.cache
+D:\CFP\FundoNoteApplication\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\CFP\FundoNoteApplication\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.AssemblyInfoInputs.cache
+D:\CFP\FundoNoteApplication\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.AssemblyInfo.cs
+D:\CFP\FundoNoteApplication\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.csproj.CoreCompileInputs.cache
+D:\CFP\FundoNoteApplication\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.dll
+D:\CFP\FundoNoteApplication\CommonLayer\obj\Debug\netcoreapp3.1\CommonLayer.pdb

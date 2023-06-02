@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\ajarp\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ajarp\\.nuget\\packages"
+    ]
+  }
+}
