@@ -120,11 +120,11 @@ namespace DataLayer.Service
                 throw;
             }
         }
-        public bool Pinned(long NoteID, long userId)
+        public bool Pinned(long NoteID)
         {
             try
             {
-                var result = context.Notes.Where(r => r.UserId == userId && r.NoteID == NoteID).FirstOrDefault();
+                var result = context.Notes.Where(r => r.NoteID == NoteID).FirstOrDefault();
 
                 result.IsPin = !result.IsPin;
                 context.SaveChanges();
@@ -136,11 +136,11 @@ namespace DataLayer.Service
                 throw;
             }
         }
-        public bool Trashed(long NoteID, long userId)
+        public bool Trashed(long NoteID)
         {
             try
             {
-                var result = context.Notes.Where(r => r.UserId == userId && r.NoteID == NoteID).FirstOrDefault();
+                var result = context.Notes.Where(r => r.NoteID == NoteID).FirstOrDefault();
 
                 result.IsTrash = !result.IsTrash;
                 context.SaveChanges();
@@ -152,11 +152,11 @@ namespace DataLayer.Service
                 throw;
             }
         }
-        public bool Archieved(long NoteID, long userId)
+        public bool Archieved(long NoteID)
         {
             try
             {
-                var result = context.Notes.Where(r => r.UserId == userId && r.NoteID == NoteID).FirstOrDefault();
+                var result = context.Notes.Where(r => r.NoteID == NoteID).FirstOrDefault();
                 result.IsArchive = !result.IsArchive;
                 context.SaveChanges();
                 return result.IsArchive;

@@ -99,12 +99,12 @@ namespace FundoNoteApplication.Controllers
         }
         [HttpPut]
         [Route("Archive")]
-        public IActionResult ArchiveNote(long NoteId)
+        public IActionResult ArchiveNote(long NoteId, long userid)
         {
             try
             {
-                long userid = Convert.ToInt32(User.Claims.FirstOrDefault(X => X.Type == "userID").Value);
-                var result = NoteBL.Archieved(NoteId, userid);
+            
+                var result = NoteBL.Archieved(NoteId);
                 if (result == true)
                 {
                     return this.Ok(new { Success = true, message = "Archived Successfully", data = result });
@@ -131,8 +131,8 @@ namespace FundoNoteApplication.Controllers
         {
             try
             {
-                long userId = Convert.ToInt32(User.Claims.FirstOrDefault(p => p.Type == "userID").Value);
-                var result = NoteBL.Pinned(NoteId, userId);
+                
+                var result = NoteBL.Pinned(NoteId);
                 if (result == true)
                 {
                     return this.Ok(new { Success = true, message = "Note Pinned Successfully", data = result });
@@ -158,8 +158,8 @@ namespace FundoNoteApplication.Controllers
         {
             try
             {
-                long userId = Convert.ToInt32(User.Claims.FirstOrDefault(t => t.Type == "userID").Value);
-                var result = NoteBL.Trashed(NotesId, userId);
+                
+                var result = NoteBL.Trashed(NotesId);
                 if (result == true)
                 {
                     return this.Ok(new { Success = true, message = "Trashed Successfully", data = result });
@@ -188,7 +188,7 @@ namespace FundoNoteApplication.Controllers
         {
             try
             {
-                long userId = Convert.ToInt32(User.Claims.FirstOrDefault(r => r.Type == "userID").Value);
+              
                 var colors = NoteBL.ColorNote(NoteId, color);
                 if (colors != null)
                 {

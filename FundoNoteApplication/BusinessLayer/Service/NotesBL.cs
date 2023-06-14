@@ -68,33 +68,33 @@ namespace BusinessLayer.Service
                 throw;
             }
         }
-        public bool Pinned(long NoteID, long userId)
+        public bool Pinned(long NoteID)
         {
             try
             {
-                return this.NotesDL.Pinned(NoteID, userId);
+                return this.NotesDL.Pinned(NoteID);
             }
             catch (Exception)
             {
                 throw;
             }
         }
-        public bool Trashed(long NoteID, long userId)
+        public bool Trashed(long NoteID)
         {
             try
             {
-                return this.NotesDL.Trashed(NoteID, userId);
+                return this.NotesDL.Trashed(NoteID);
             }
             catch (Exception)
             {
                 throw;
             }
         }
-        public bool Archieved(long NoteID, long userId)
+        public bool Archieved(long NoteID)
         {
             try
             {
-                return this.NotesDL.Archieved(NoteID, userId);
+                return this.NotesDL.Archieved(NoteID);
             }
             catch (Exception)
             {
