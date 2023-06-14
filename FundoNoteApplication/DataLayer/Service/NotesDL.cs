@@ -120,6 +120,70 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        public bool Pinned(long NoteID, long userId)
+        {
+            try
+            {
+                var result = context.Notes.Where(r => r.UserId == userId && r.NoteID == NoteID).FirstOrDefault();
 
+                result.IsPin = !result.IsPin;
+                context.SaveChanges();
+                return result.IsPin;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public bool Trashed(long NoteID, long userId)
+        {
+            try
+            {
+                var result = context.Notes.Where(r => r.UserId == userId && r.NoteID == NoteID).FirstOrDefault();
+
+                result.IsTrash = !result.IsTrash;
+                context.SaveChanges();
+                return result.IsTrash;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public bool Archieved(long NoteID, long userId)
+        {
+            try
+            {
+                var result = context.Notes.Where(r => r.UserId == userId && r.NoteID == NoteID).FirstOrDefault();
+                result.IsArchive = !result.IsArchive;
+                context.SaveChanges();
+                return result.IsArchive;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public NotesEntity ColorNote(long NoteId, string color)
+        {
+            var result = context.Notes.Where(r => r.NoteID == NoteId).FirstOrDefault();
+            if (result != null)
+            {
+
+                result.Color = color;
+                context.Notes.Update(result);
+                context.SaveChanges();
+                return result;
+
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

@@ -7,6 +7,7 @@ using System;
 using BusinessLayer.Interface;
 using DataLayer.DB;
 using DataLayer.Service;
+using DataLayer.Interface;
 
 namespace FundoNoteApplication.Controllers
 {
@@ -93,6 +94,115 @@ namespace FundoNoteApplication.Controllers
             catch (System.Exception)
             {
 
+                throw;
+            }
+        }
+        [HttpPut]
+        [Route("Archive")]
+        public IActionResult ArchiveNote(long NoteId)
+        {
+            try
+            {
+                long userid = Convert.ToInt32(User.Claims.FirstOrDefault(X => X.Type == "userID").Value);
+                var result = NoteBL.Archieved(NoteId, userid);
+                if (result == true)
+                {
+                    return this.Ok(new { Success = true, message = "Archived Successfully", data = result });
+                }
+                else if (result == false)
+                {
+                    return this.Ok(new { Success = true, message = "Unarchived", data = result });
+                }
+
+                else
+                {
+                    return this.BadRequest(new { Success = false, Message = "Archived unsuccessful" });
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        [HttpPut]
+        [Route("Pin")]
+        public IActionResult PinNote(long NoteId)
+        {
+            try
+            {
+                long userId = Convert.ToInt32(User.Claims.FirstOrDefault(p => p.Type == "userID").Value);
+                var result = NoteBL.Pinned(NoteId, userId);
+                if (result == true)
+                {
+                    return this.Ok(new { Success = true, message = "Note Pinned Successfully", data = result });
+                }
+                else if (result == false)
+                {
+                    return this.Ok(new { Success = true, message = "Unpinned", data = result });
+                }
+                else
+                {
+                    return this.BadRequest(new { Success = false, message = "Note Pinned Unsuccessfully" });
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        [HttpPut]
+        [Route("Trash")]
+        public IActionResult TrashNote(long NotesId)
+        {
+            try
+            {
+                long userId = Convert.ToInt32(User.Claims.FirstOrDefault(t => t.Type == "userID").Value);
+                var result = NoteBL.Trashed(NotesId, userId);
+                if (result == true)
+                {
+                    return this.Ok(new { Success = true, message = "Trashed Successfully", data = result });
+                }
+                else if (result == false)
+                {
+                    return this.Ok(new { Success = true, message = "Untrashed", data = result });
+                }
+
+                else
+                {
+
+                    return this.BadRequest(new { Success = false, message = "Trashed unsuccessfull" });
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpPut]
+        [Route("Color")]
+        public IActionResult ColourNote(long NoteId, string color)
+        {
+            try
+            {
+                long userId = Convert.ToInt32(User.Claims.FirstOrDefault(r => r.Type == "userID").Value);
+                var colors = NoteBL.ColorNote(NoteId, color);
+                if (colors != null)
+                {
+
+                    return Ok(new { Success = true, message = "Added Colour Successfully", data = colors });
+                }
+                else
+                {
+
+                    return BadRequest(new { Success = false, message = "Added Colour Unsuccessful" });
+                }
+            }
+            catch (Exception)
+            {
                 throw;
             }
         }

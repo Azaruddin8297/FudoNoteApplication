@@ -2,6 +2,7 @@
 using CommonLayer.Models;
 using DataLayer.DB;
 using DataLayer.Interface;
+using DataLayer.Service;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -67,7 +68,50 @@ namespace BusinessLayer.Service
                 throw;
             }
         }
-
+        public bool Pinned(long NoteID, long userId)
+        {
+            try
+            {
+                return this.NotesDL.Pinned(NoteID, userId);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public bool Trashed(long NoteID, long userId)
+        {
+            try
+            {
+                return this.NotesDL.Trashed(NoteID, userId);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public bool Archieved(long NoteID, long userId)
+        {
+            try
+            {
+                return this.NotesDL.Archieved(NoteID, userId);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public NotesEntity ColorNote(long NoteId, string color)
+        {
+            try
+            {
+                return this.NotesDL.ColorNote(NoteId, color);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
        
     }
