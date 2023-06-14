@@ -12,5 +12,6 @@ namespace DataLayer.DB
         {
         }
         public DbSet<UserEntity> UserTable { get; set; }
+        public DbSet<NotesEntity> Notes { get; set; }
     }
 }

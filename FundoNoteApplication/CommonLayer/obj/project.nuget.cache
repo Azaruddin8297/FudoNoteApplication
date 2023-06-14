@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "i3Qmx1i1UaP6KKIoxxsVIqqD+cbXizpD0+dtfy/9wUIzmk6vI973+MsF2CgCy9TzAvINy8hOkUweRyFExWsfrg==",
+  "dgSpecHash": "Spo3khXzrFNwfX76LDD0UthHmej2Llxdw2rAeyDMYeuTXvJzXRFTReIvAbeibsYW2s/k+SaBgmR5oqvN1gWunA==",
   "success": true,
   "projectFilePath": "D:\\CFP\\FundoNoteApplication\\CommonLayer\\CommonLayer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ajarp\\.nuget\\packages\\experimental.system.messaging\\1.1.0\\experimental.system.messaging.1.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
