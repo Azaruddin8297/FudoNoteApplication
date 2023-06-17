@@ -110,13 +110,14 @@ namespace FundoNoteApplication.Controllers
             try
             {
               
-                var email = User.Claims.First(e => e.Type == "Email").Value;
+                var email = User.Claims.FirstOrDefault(e => e.Type == "Email").Value;
                 var result = userBL.ResetPassword(email, password, confirmPassword);
 
-                if (userBL.ResetPassword(email, password, confirmPassword))
+               // if (userBL.ResetPassword(email, password, confirmPassword))
+                if(result != null)
                 {
                    
-                    return Ok(new { success = true, message = "Password Reset Successful" });
+                    return Ok(new { success = true, message = "Password Reset Successful", Data = result });
                 }
                 else
                 {
@@ -126,6 +127,52 @@ namespace FundoNoteApplication.Controllers
             catch (System.Exception)
             {
               
+                throw;
+            }
+        }
+
+        [HttpGet]
+        [Route("GetAllUsers")]
+        public IActionResult GetAllUsers()
+        {
+            try
+            {
+                var result = this.userBL.GetAllUsers();
+                if(result != null)
+                {
+                    return Ok(new { success = true, message = "Successful", Data = result });
+                }
+                else
+                {
+                    return BadRequest(new { success = false, message = "There are No User Present" });
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpGet]
+        [Route("GetAllUsersbyID")]
+        public IActionResult GetAllUsersbyID(long userid)
+        {
+            try
+            {
+                var result = this.userBL.GetAllUsersbyID(userid);
+                if (result != null)
+                {
+                    return Ok(new { success = true, message = "Successful", Data = result });
+                }
+                else
+                {
+                    return BadRequest(new { success = false, message = "There are No User Present" });
+                }
+            }
+            catch (Exception)
+            {
+
                 throw;
             }
         }

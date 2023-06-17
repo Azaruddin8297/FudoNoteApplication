@@ -57,11 +57,36 @@ namespace BusinessLayer.Service
                 throw;
             }
         }
-        public bool ResetPassword(string email, string password, string confirmPassword)
+        public string ResetPassword(string email, string password, string confirmPassword)
         {
             try
             {
                 return this.userDL.ResetPassword(email, password, confirmPassword);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public List<UserEntity> GetAllUsers()
+        {
+            try
+            {
+                return this.userDL.GetAllUsers();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public UserEntity GetAllUsersbyID(long userId)
+        {
+            try
+            {
+                return this.userDL.GetAllUsersbyID(userId);
             }
             catch (Exception)
             {

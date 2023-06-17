@@ -48,6 +48,8 @@ namespace DataLayer.Service
                 throw;
             }
         }
+
+       
         public string Login(UserLogin Login)
         {
 
@@ -110,20 +112,21 @@ namespace DataLayer.Service
                 throw;
             }
         }
-        public bool ResetPassword(string email, string password, string confirmPassword)
+        public string ResetPassword(string email, string password, string confirmPassword)
         {
             try
             {
-                if (password.Equals(confirmPassword))
+                UserEntity userEntity = new UserEntity();
+                userEntity = context.UserTable.FirstOrDefault(x => x.Email == email);
+                if (userEntity != null)
                 {
-                    var Result = context.UserTable.FirstOrDefault(x => x.Email == email);
-                    Result.Password = password;
+                    userEntity.Password = password;
                     context.SaveChanges();
-                    return true;
+                    return "Done";
                 }
                 else
                 {
-                    return false;
+                    return null;
                 }
 
 
@@ -134,6 +137,27 @@ namespace DataLayer.Service
                 throw;
             }
 
+        }
+        public List<UserEntity> GetAllUsers()
+        {
+           var entity = this.context.UserTable.FirstOrDefault();
+
+            if (entity != null)
+            {
+                return context.UserTable.ToList();
+            }
+            else return null;
+        }
+
+        public UserEntity GetAllUsersbyID(long userId)
+        {
+            UserEntity entity = new UserEntity();
+            entity = this.context.UserTable.FirstOrDefault(e => e.UserId == userId);
+            if (entity != null)
+            {
+                return entity;
+            }
+            else return null;
         }
 
     }

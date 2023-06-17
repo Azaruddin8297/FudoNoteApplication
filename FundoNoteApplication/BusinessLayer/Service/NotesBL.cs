@@ -3,8 +3,10 @@ using CommonLayer.Models;
 using DataLayer.DB;
 using DataLayer.Interface;
 using DataLayer.Service;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace BusinessLayer.Service
@@ -106,6 +108,17 @@ namespace BusinessLayer.Service
             try
             {
                 return this.NotesDL.ColorNote(NoteId, color);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public string Imaged(long NoteID, IFormFile image)
+        {
+            try
+            {
+                return this.NotesDL.Imaged(NoteID, image);
             }
             catch (Exception)
             {

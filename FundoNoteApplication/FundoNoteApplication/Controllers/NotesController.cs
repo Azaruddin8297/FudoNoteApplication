@@ -53,11 +53,11 @@ namespace FundoNoteApplication.Controllers
 
         }
         [HttpDelete("Delete")]
-        public IActionResult DeleteNotes(long addnote)
+        public IActionResult DeleteNotes(long NoteId)
         {
             try
             { 
-                var addresult = NoteBL.DeleteNote(addnote);
+                var addresult = NoteBL.DeleteNote(NoteId);
                 if (addresult != null)
                 {
                     return this.Ok(new { sucess = true, msg = "Note Deleted sucessfull", data = addresult }); //SSMD form
@@ -103,7 +103,6 @@ namespace FundoNoteApplication.Controllers
         {
             try
             {
-            
                 var result = NoteBL.Archieved(NoteId);
                 if (result == true)
                 {
@@ -203,6 +202,32 @@ namespace FundoNoteApplication.Controllers
             }
             catch (Exception)
             {
+                throw;
+            }
+        }
+
+        [HttpPost]
+        [Route("Imaged")]
+        public IActionResult Imaged(long noteId, IFormFile image)
+        {
+            try
+            {
+             
+                var result = NoteBL.Imaged(noteId, image);
+                if (result != null)
+                {
+          
+                    return Ok(new { Status = true, Message = "Image Uploaded Successfully"});
+                }
+                else
+                {
+     
+                    return BadRequest(new { Status = true, Message = "Image Uploaded Unsuccessfully", Data = result });
+                }
+            }
+            catch (Exception)
+            {
+      
                 throw;
             }
         }

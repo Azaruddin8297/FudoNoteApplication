@@ -1,11 +1,16 @@
-﻿using CommonLayer.Models;
+﻿using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
+using CommonLayer.Models;
 using DataLayer.DB;
 using DataLayer.Interface;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
+using Microsoft.VisualStudio.Services.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 namespace DataLayer.Service
 {
@@ -183,6 +188,41 @@ namespace DataLayer.Service
             else
             {
                 return null;
+            }
+        }
+        public string Imaged(long NoteID, IFormFile image)
+        {
+            try
+            {
+                var result = context.Notes.Where(x => x.NoteID == NoteID).FirstOrDefault();
+                if (result != null)
+                {
+                    CloudinaryDotNet.Account account = new CloudinaryDotNet.Account(
+                        "dppgqwsxl",        // CLOUD_NAME,API_KEY,API_SECRET
+                         "363283181543147",
+                         "N5BUeGSnvAKY2zJ8iqJKmc7I638"
+                        );
+
+                    Cloudinary cloudinary = new Cloudinary(account);
+                    var uploadParameters = new ImageUploadParams()
+                    {
+                        File = new FileDescription(image.FileName, image.OpenReadStream()),
+                    };
+                    var uploadResult = cloudinary.Upload(uploadParameters);
+                    string imagePath = uploadResult.Url.ToString();
+                    result.Image = image.FileName;
+                  //  result.Image = imagePath;
+                    context.SaveChanges();
+                    return "Image Upload Successfully";
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
     }
