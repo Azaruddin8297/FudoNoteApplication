@@ -48,20 +48,20 @@ namespace FundoNoteApplication.Controllers
             }
            
         }
-        //[HttpDelete]
-        //[Route("deletecollaborator")]
+        [HttpDelete]
+        [Route("deletecollaborator")]
 
-        //public IActionResult deletecollaborator(long collaboratorID)
-        //{
-        //    var deleteResult = collabBL.DeleteCollaborator(collaboratorID);
-        //    if (deleteResult != null)
-        //    {
-        //        return this.Ok(new { sucess = true, msg = "Collaborator Deleted sucessfull", data = deleteResult }); //SSMD form
-        //    }
-        //    else
-        //    {
-        //        return this.BadRequest(new { sucess = false, msg = "Collaborator not Deleted" });
-        //    }
-        //}
+        public IActionResult deletecollaborator(long collaboratorID)
+        {
+            var deleteResult = collabBL.DeleteCollaborator(collaboratorID);
+            if (deleteResult != null)
+            {
+                return this.Ok(new { sucess = true, msg = "Collaborator Deleted sucessfull", data = deleteResult }); //SSMD form
+            }
+            else
+            {
+                return this.BadRequest(new { sucess = false, msg = "Collaborator not Deleted" });
+            }
+        }
     }
 }
