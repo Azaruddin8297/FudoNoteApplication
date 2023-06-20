@@ -42,6 +42,8 @@ namespace FundoNoteApplication
             services.AddTransient<IUserDL, UserDL>();
             services.AddTransient<INotesBL, NotesBL>();
             services.AddTransient<INotesDL, NotesDL>();
+            services.AddTransient<ICollabBL, CollabBL>();
+            services.AddTransient<ICollaboratorDL, CollaboratorDL>();
             //ReadSettings
             var appSettingsSection = Configuration.GetSection("JwtConfig");
             //services.Configure<JwtConfig>(appSettingsSection);

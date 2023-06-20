@@ -1,4 +1,5 @@
 ﻿using CommonLayer.Models;
+using DataLayer.DB;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,6 +8,7 @@ namespace BusinessLayer.Interface
 {
     public interface ICollabBL
     {
-        public CollabResponseModel AddCollaborate(long notesId,long uesrid, CollabModel model);
+        public CollaboratorEntity AddCollaborate(long notesId,long uesrid, CollabModel model);
+        public CollaboratorEntity DeleteCollaborator(long collaboratorID);
     }
 }

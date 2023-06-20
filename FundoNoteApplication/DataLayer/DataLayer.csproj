@@ -11,6 +11,10 @@
     <Compile Remove="Migrations\20230617102007_Collaborator.Designer.cs" />
     <Compile Remove="Migrations\20230617102120_Collaborator.cs" />
     <Compile Remove="Migrations\20230617102120_Collaborator.Designer.cs" />
+    <Compile Remove="Migrations\20230619053450_Collaborator.cs" />
+    <Compile Remove="Migrations\20230619053450_Collaborator.Designer.cs" />
+    <Compile Remove="Migrations\20230619053644_Collaborator1.cs" />
+    <Compile Remove="Migrations\20230619053644_Collaborator1.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -2,7 +2,7 @@
 
 namespace DataLayer.Migrations
 {
-    public partial class Collaborator : Migration
+    public partial class Collab : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -33,7 +33,29 @@ namespace DataLayer.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Collaborator", x => x.CollaboratorID);
+                    table.ForeignKey(
+                        name: "FK_Collaborator_Notes_NoteID",
+                        column: x => x.NoteID,
+                        principalTable: "Notes",
+                        principalColumn: "NoteID",
+                        onDelete: ReferentialAction.NoAction);
+                    table.ForeignKey(
+                        name: "FK_Collaborator_UserTable_UserId",
+                        column: x => x.UserId,
+                        principalTable: "UserTable",
+                        principalColumn: "UserId",
+                        onDelete: ReferentialAction.NoAction);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Collaborator_NoteID",
+                table: "Collaborator",
+                column: "NoteID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Collaborator_UserId",
+                table: "Collaborator",
+                column: "UserId");
 
             migrationBuilder.AddForeignKey(
                 name: "FK_Notes_UserTable_UserId",
@@ -41,7 +63,7 @@ namespace DataLayer.Migrations
                 column: "UserId",
                 principalTable: "UserTable",
                 principalColumn: "UserId",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.NoAction);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -69,7 +91,7 @@ namespace DataLayer.Migrations
                 column: "userid",
                 principalTable: "UserTable",
                 principalColumn: "UserId",
-                onDelete: ReferentialAction.Cascade);
+                onDelete: ReferentialAction.NoAction);
         }
     }
 }

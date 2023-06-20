@@ -17,33 +17,50 @@ namespace DataLayer.Service
                 this.context = context;
         }
 
-        public CollabResponseModel AddCollaborate(long notesId, long uesrid, CollabModel model)
+      
+
+        public CollaboratorEntity AddCollaborate(long noteID, long userID, CollabModel model)
         {
             try
             {
-              //  var validNotesAndUser = this.context.UserTable.Where(e => e.UserId == jwtUserId);
-                CollaboratorEntity collaborate = new CollaboratorEntity();
+                var result = context.Collaborator.FirstOrDefault(x => x.UserId == userID && x.NoteID == noteID);
+                CollaboratorEntity collaborator = new CollaboratorEntity();
 
-                collaborate.NoteID = notesId;
-                collaborate.UserId = uesrid;
-                collaborate.CollaboratedEmail = model.CollaboratedEmail;
-
-                CollabResponseModel responseModel = new CollabResponseModel();
-
-                responseModel.CollaboratorID = collaborate.CollaboratorID;
-                responseModel.noteID = collaborate.NoteID;
-                responseModel.UserId = collaborate.UserId;
-                responseModel.CollaboratedEmail = collaborate.CollaboratedEmail;
-
-                context.Collaborator.Add(collaborate);
+                collaborator.NoteID = noteID;
+                collaborator.UserId = userID;
+                collaborator.CollaboratedEmail = model.CollaboratedEmail;
+                context.Collaborator.Add(collaborator);
                 context.SaveChanges();
 
-               
+                if (collaborator != null)
+                {
 
-                return responseModel;
+                    return collaborator;
+                }
+                else { return null; }
             }
             catch (Exception)
             {
+
+                throw;
+            }
+        }
+        public CollaboratorEntity DeleteCollaborator(long collaboratorID)
+        {
+            try
+            {
+                var idCheck = context.Collaborator.FirstOrDefault(x => x.CollaboratorID == collaboratorID);
+                if (idCheck != null)
+                {
+                    context.Collaborator.Remove(idCheck);
+                    context.SaveChanges();
+                    return idCheck;
+                }
+                else return null;
+            }
+            catch (Exception)
+            {
+
                 throw;
             }
         }

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataLayer.Migrations
 {
     [DbContext(typeof(FundoContext))]
-    [Migration("20230617102545_Collaborator")]
-    partial class Collaborator
+    [Migration("20230619053826_Collab")]
+    partial class Collab
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -38,6 +38,10 @@ namespace DataLayer.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("CollaboratorID");
+
+                    b.HasIndex("NoteID");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Collaborator");
                 });
@@ -105,6 +109,21 @@ namespace DataLayer.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("UserTable");
+                });
+
+            modelBuilder.Entity("DataLayer.DB.CollaboratorEntity", b =>
+                {
+                    b.HasOne("DataLayer.DB.NotesEntity", "note")
+                        .WithMany()
+                        .HasForeignKey("NoteID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DataLayer.DB.UserEntity", "user")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("DataLayer.DB.NotesEntity", b =>

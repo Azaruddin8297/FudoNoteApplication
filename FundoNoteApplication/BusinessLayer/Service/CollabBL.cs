@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Interface;
 using CommonLayer.Models;
+using DataLayer.DB;
 using DataLayer.Interface;
 using System;
 using System.Collections.Generic;
@@ -14,17 +15,30 @@ namespace BusinessLayer.Service
         {
               this.collaboratorDL = collaboratorDL;
         }
-        public CollabResponseModel AddCollaborate(long notesId,long uesrid, CollabModel model)
+        public CollaboratorEntity AddCollaborate(long notesId,long uesrid, CollabModel model)
         {
 			try
 			{
-                return this.collaboratorDL.AddCollaborate(notesId, uesrid, model);
-			}
+                return collaboratorDL.AddCollaborate(notesId, uesrid, model);
+            }
 			catch (Exception)
 			{
 
 				throw;
 			}
         }
+        public CollaboratorEntity DeleteCollaborator(long collaboratorID)
+        {
+            try
+            {
+                return collaboratorDL.DeleteCollaborator(collaboratorID);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
+
 }

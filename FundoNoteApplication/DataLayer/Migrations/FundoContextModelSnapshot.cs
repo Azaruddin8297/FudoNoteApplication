@@ -37,6 +37,10 @@ namespace DataLayer.Migrations
 
                     b.HasKey("CollaboratorID");
 
+                    b.HasIndex("NoteID");
+
+                    b.HasIndex("UserId");
+
                     b.ToTable("Collaborator");
                 });
 
@@ -103,6 +107,21 @@ namespace DataLayer.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("UserTable");
+                });
+
+            modelBuilder.Entity("DataLayer.DB.CollaboratorEntity", b =>
+                {
+                    b.HasOne("DataLayer.DB.NotesEntity", "note")
+                        .WithMany()
+                        .HasForeignKey("NoteID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DataLayer.DB.UserEntity", "user")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("DataLayer.DB.NotesEntity", b =>
