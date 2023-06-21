@@ -125,6 +125,18 @@ namespace BusinessLayer.Service
                 throw;
             }
         }
+        public IEnumerable<NotesEntity> Search(string query)
+        {
+            try
+            {
+                return this.NotesDL.Search(query);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
        
     }

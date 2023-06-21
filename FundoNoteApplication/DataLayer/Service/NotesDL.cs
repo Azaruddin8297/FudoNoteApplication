@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
+using System.Reflection.Metadata.Ecma335;
 
 namespace DataLayer.Service
 {
@@ -224,6 +225,21 @@ namespace DataLayer.Service
             {
                 throw new Exception(ex.Message);
             }
+        }
+
+        public IEnumerable<NotesEntity> Search(string query)
+        {
+           
+            
+            var result = this.context.Notes.Where(e => e.Title.Contains(query));
+           // var output = result.ToList();
+
+            if(result != null)
+            {
+                return result;
+            }
+            else return null;
+            
         }
     }
 }

@@ -14,6 +14,7 @@ namespace DataLayer.DB
         public DbSet<UserEntity> UserTable { get; set; }
         public DbSet<NotesEntity> Notes { get; set; }
         public DbSet<CollaboratorEntity> Collaborator { get; set; }
+        public DbSet<LabelEntity> Label { get; set; }
 
 
     }

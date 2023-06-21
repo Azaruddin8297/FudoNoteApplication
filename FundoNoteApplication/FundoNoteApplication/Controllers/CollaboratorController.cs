@@ -25,12 +25,12 @@ namespace FundoNoteApplication.Controllers
 
         [HttpPost]
         [Route("AddCollaborator")]
-        public IActionResult AddCollaborator(long noteid,CollabModel model)
+        public IActionResult AddCollaborator(long noteid, long userID, CollabModel model)
         {
 
             try
             {
-                long userID = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
+                //long userID = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
                 var addresult = collabBL.AddCollaborate(noteid, userID, model);
                 if (addresult != null)
                 {
@@ -54,6 +54,7 @@ namespace FundoNoteApplication.Controllers
         public IActionResult deletecollaborator(long collaboratorID)
         {
             var deleteResult = collabBL.DeleteCollaborator(collaboratorID);
+            
             if (deleteResult != null)
             {
                 return this.Ok(new { sucess = true, msg = "Collaborator Deleted sucessfull", data = deleteResult }); //SSMD form

@@ -8,6 +8,8 @@ using BusinessLayer.Interface;
 using DataLayer.DB;
 using DataLayer.Service;
 using DataLayer.Interface;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace FundoNoteApplication.Controllers
 {
@@ -231,5 +233,57 @@ namespace FundoNoteApplication.Controllers
                 throw;
             }
         }
+        [HttpGet]
+        [Route("SearchNotes")]
+        public IActionResult SearchNotes(string query)
+        {
+            try
+            {
+                var result = this.NoteBL.Search(query);
+                var count = result.Count();
+               
+                if (result != null)
+                {
+                    return Ok(new { success = true, message = "Data is Present in the table",count ,Data = result });
+                }
+                else
+                {
+                    return BadRequest(new { success = false, message = "No Data Present" });
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        [HttpGet]
+        [Route("SearchNotesbyPage")]
+        public IActionResult SearchNotesbyPage(string query,int page = 1, int pagesize = 10)
+        {
+            try
+            {
+                var result = this.NoteBL.Search(query);
+                var count = result.Count();
+                var pageinatNotes = result.Skip((page-1)*pagesize).Take(pagesize);
+                var totalpages = (int)Math.Ceiling((double)count/pagesize);
+
+                if (result != null)
+                {
+                    return Ok(new { success = true, message = "Data is Present in the table", count,pageinatNotes,totalpages});
+                }
+                else
+                {
+                    return BadRequest(new { success = false, message = "No Data Present" });
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }
+
