@@ -26,10 +26,7 @@ namespace FundoNoteApplication.Controllers
         {
 
             try
-            {
-                
-             
-              
+            { 
                 var addresult = labelBL.CreateLable(noteid, userid, model);
                 if (addresult != null)
                 {
@@ -47,5 +44,28 @@ namespace FundoNoteApplication.Controllers
             }
 
         }
+        [HttpGet]
+        [Route("ReadAll")]
+        public IActionResult ReadAll()
+        {
+            try
+            {
+
+                var res = this.labelBL.GetAllLable();
+                if (res != null)
+                {
+                    return this.Ok(new { sucess = true, msg = "Label", data = res }); //SSMD form
+                }
+                else
+                {
+                    return this.BadRequest(new { sucess = false, msg = "No Lables" });
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        } 
     }
 }

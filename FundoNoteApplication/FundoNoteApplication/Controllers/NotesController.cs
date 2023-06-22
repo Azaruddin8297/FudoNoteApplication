@@ -10,6 +10,11 @@ using DataLayer.Service;
 using DataLayer.Interface;
 using System.Collections;
 using System.Collections.Generic;
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Distributed;
+using Newtonsoft.Json;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace FundoNoteApplication.Controllers
 {
@@ -19,11 +24,14 @@ namespace FundoNoteApplication.Controllers
     {
         private readonly INotesBL NoteBL;
         private readonly FundoContext context;
-
-        public NotesController(INotesBL NoteBL,FundoContext context)
+        public readonly IMemoryCache memoryCache;
+        public readonly IDistributedCache distributedCache;
+        public NotesController(INotesBL NoteBL,FundoContext context, IMemoryCache memoryCache, IDistributedCache distributedCache)
         {
             this.NoteBL = NoteBL;
             this.context = context;
+            this.memoryCache = memoryCache;
+            this.distributedCache = distributedCache;
         }
         [HttpPost("Add")]
         public IActionResult AddNotes(NoteModel addnote )
@@ -283,6 +291,50 @@ namespace FundoNoteApplication.Controllers
 
                 throw;
             }
+        }
+
+        [HttpGet("GetAllNote")]
+        public IActionResult GetAllNote()
+        {
+            try
+            {
+                List<NotesEntity> result = this.NoteBL.GetAllNote();
+                if (result != null)
+                {
+                    return this.Ok(new { Success = true, message = " Note got Successfully", data = result });
+                }
+                else
+                    return this.BadRequest(new { Success = false, message = "Note not Available" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { success = false, message = ex.Message });
+            }
+        }
+        [HttpGet("redis")]
+        public async Task<IActionResult> GetAllCustomersUsingRedisCache()
+        {
+            var cacheKey = "NotesList";
+            string serializedCustomerList;
+            var NoteList = new List<NotesEntity>();
+            var redisCustomerList = await distributedCache.GetAsync(cacheKey);
+            if (redisCustomerList != null)
+            {
+                serializedCustomerList = Encoding.UTF8.GetString(redisCustomerList);
+                NoteList = JsonConvert.DeserializeObject<List<NotesEntity>>(serializedCustomerList);
+            }
+            else
+            {
+               // customerList = await context.Notes.ToListAsync();
+               NoteList = (List<NotesEntity>)this.NoteBL.GetAllNote();
+                serializedCustomerList = JsonConvert.SerializeObject(NoteList);
+                redisCustomerList = Encoding.UTF8.GetBytes(serializedCustomerList);
+                var options = new DistributedCacheEntryOptions()
+                    .SetAbsoluteExpiration(DateTime.Now.AddMinutes(10))
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(2));
+                await distributedCache.SetAsync(cacheKey, redisCustomerList, options);
+            }
+            return Ok(NoteList);
         }
     }
 }

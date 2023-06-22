@@ -9,5 +9,6 @@ namespace BusinessLayer.Interface
     public interface ILabelBL
     {
         public ResponseLable CreateLable(long notesId, long jwtUserId, LableModel model);
+        public IEnumerable<LabelEntity> GetAllLable();
     }
 }

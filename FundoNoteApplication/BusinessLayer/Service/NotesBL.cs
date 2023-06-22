@@ -137,6 +137,18 @@ namespace BusinessLayer.Service
                 throw;
             }
         }
+        public List<NotesEntity> GetAllNote()
+        {
+            try
+            {
+                return this.NotesDL.GetAllNote();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
        
     }

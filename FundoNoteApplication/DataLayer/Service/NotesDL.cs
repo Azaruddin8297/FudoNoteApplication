@@ -241,5 +241,24 @@ namespace DataLayer.Service
             else return null;
             
         }
+        public List<NotesEntity> GetAllNote()
+        {
+            try
+            {
+                var Note = context.Notes.FirstOrDefault();
+
+                if (Note != null)
+                {
+                    return context.Notes.ToList();
+                }
+
+                return null;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

@@ -95,3 +95,8 @@ D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\System.
 D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
 D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll

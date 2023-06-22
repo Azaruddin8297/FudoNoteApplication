@@ -19,6 +19,6 @@ namespace DataLayer.Interface
         public NotesEntity ColorNote(long NoteId, string color);
         public string Imaged(long NoteID, IFormFile image);
         public IEnumerable<NotesEntity> Search(string query);
-
+        public List<NotesEntity> GetAllNote();
     }
 }

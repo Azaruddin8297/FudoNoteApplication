@@ -28,5 +28,17 @@ namespace BusinessLayer.Service
 				throw;
 			}
         }
+        public IEnumerable<LabelEntity> GetAllLable()
+        {
+			try
+			{
+				return this.label.GetAllLable();
+			}
+			catch (Exception)
+			{
+
+				throw;
+			}
+        }
     }
 }

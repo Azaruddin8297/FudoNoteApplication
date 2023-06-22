@@ -9,5 +9,6 @@ namespace DataLayer.Interface
     public interface ILableDL
     {
         public ResponseLable CreateLable(long notesId, long jwtUserId, LableModel model);
+        public IEnumerable<LabelEntity> GetAllLable();
     }
 }

@@ -46,6 +46,11 @@ namespace FundoNoteApplication
             services.AddTransient<ICollaboratorDL, CollaboratorDL>();
             services.AddTransient<ILabelBL, LabelBL>();
             services.AddTransient<ILableDL, LabelDL>();
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = "localhost:6379";
+            });
+            services.AddMemoryCache();
             //ReadSettings
             var appSettingsSection = Configuration.GetSection("JwtConfig");
             //services.Configure<JwtConfig>(appSettingsSection);

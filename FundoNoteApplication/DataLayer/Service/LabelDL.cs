@@ -47,7 +47,21 @@ namespace DataLayer.Service
                     return null;
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public IEnumerable<LabelEntity> GetAllLable()
+        {
+            try
+            {
+
+                var result = this.context.Label.ToList();
+                return result;
+
+            }
+            catch (Exception )
             {
                 throw;
             }
