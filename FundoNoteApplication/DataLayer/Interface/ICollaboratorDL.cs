@@ -10,7 +10,6 @@ namespace DataLayer.Interface
     {
         public CollaboratorEntity AddCollaborate(long notesId, long userid, CollabModel model);
         public CollaboratorEntity DeleteCollaborator(long collaboratorID);
-
-       
+        public IEnumerable<CollaboratorEntity> GetCollab();
     }
 }

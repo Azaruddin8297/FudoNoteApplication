@@ -10,5 +10,6 @@ namespace BusinessLayer.Interface
     {
         public CollaboratorEntity AddCollaborate(long notesId,long uesrid, CollabModel model);
         public CollaboratorEntity DeleteCollaborator(long collaboratorID);
+        public IEnumerable<CollaboratorEntity> GetCollab();
     }
 }

@@ -64,5 +64,19 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        public IEnumerable<CollaboratorEntity> GetCollab()
+        {
+            try
+            {
+
+                var result = this.context.Collaborator.ToList();
+                return result;
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }

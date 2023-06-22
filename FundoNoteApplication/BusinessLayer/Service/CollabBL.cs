@@ -2,6 +2,7 @@
 using CommonLayer.Models;
 using DataLayer.DB;
 using DataLayer.Interface;
+using DataLayer.Service;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -32,6 +33,18 @@ namespace BusinessLayer.Service
             try
             {
                 return collaboratorDL.DeleteCollaborator(collaboratorID);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+        public IEnumerable<CollaboratorEntity> GetCollab()
+        {
+            try
+            {
+                return collaboratorDL.GetCollab();
             }
             catch (Exception)
             {
