@@ -3,6 +3,7 @@ using BusinessLayer.Service;
 using CommonLayer.Models;
 using DataLayer.DB;
 using DataLayer.Interface;
+using DataLayer.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
@@ -134,6 +135,28 @@ namespace FundoNoteApplication.Controllers
                 throw;
             }
 
+        }
+        [HttpDelete("Delete")]
+        public IActionResult DeleteLabel(long lableId)
+        {
+            try
+            {
+                var addresult = labelBL.DeleteLable(lableId);
+                if (addresult != null)
+                {
+                    return this.Ok(new { sucess = true, msg = "label Deleted sucessfull", data = addresult }); //SSMD form
+                }
+                else
+                {
+                    return this.BadRequest(new { sucess = false, msg = "label not Deleted" });
+                }
+
+            }
+            catch (System.Exception)
+            {
+
+                throw;
+            }
         }
 
     }

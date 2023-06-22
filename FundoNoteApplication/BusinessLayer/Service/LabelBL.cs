@@ -52,5 +52,17 @@ namespace BusinessLayer.Service
 				throw;
 			}
 		}
+        public LabelEntity DeleteLable(long noteid)
+		{
+			try
+			{
+				return this.label.DeleteLable(noteid);
+			}
+			catch (Exception)
+			{
+
+				throw;
+			}
+		}
     }
 }

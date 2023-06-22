@@ -94,7 +94,7 @@ namespace DataLayer.Service
 
                 return null;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 throw;
             }
@@ -102,20 +102,22 @@ namespace DataLayer.Service
 
 
 
-        public void DeleteLable(long noteid)
+        public LabelEntity DeleteLable(long labelID)
         {
             try
             {
 
-                var validUserId = this.context.Label.FirstOrDefault(e => e.noteID == noteid);
-                if (validUserId != null)
+                var validlabel = this.context.Label.FirstOrDefault(e => e.LabelID == labelID);
+                if (validlabel != null)
                 {
-                 
-                    this.context.Label.Remove(validUserId);
+
+                    this.context.Label.Remove(validlabel);
                     this.context.SaveChanges();
+                    return validlabel;
                 }
+                else return null;
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 throw;
             }
