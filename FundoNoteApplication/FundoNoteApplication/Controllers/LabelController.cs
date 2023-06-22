@@ -2,6 +2,7 @@
 using BusinessLayer.Service;
 using CommonLayer.Models;
 using DataLayer.DB;
+using DataLayer.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
@@ -104,5 +105,36 @@ namespace FundoNoteApplication.Controllers
             }
             return Ok(LabelList);
         }
+        [HttpPut]
+        [Route("Update")]
+        public IActionResult UpdateLable(long lableId, UpdateLabelModel model)
+        {
+            try
+            {
+                var lable = labelBL.UpdateLable(lableId, model);
+                if (lable != null)
+                {
+                    
+                    return Ok(new { Success = true, message = "Lable Updated Sucessfully", data = lable });
+
+                }
+                else
+                {
+                    
+                    return BadRequest(new { Success = false, message = "No Lable found with LableId" });
+
+                }
+
+
+
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+
+        }
+
     }
 }

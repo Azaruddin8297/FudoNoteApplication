@@ -66,5 +66,60 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        public ResponseLable UpdateLable( long lableid,UpdateLabelModel model)
+        {
+            try
+            { 
+
+                var response = this.context.Label.FirstOrDefault(e => e.LabelID == lableid);
+
+                if (response != null)
+                {
+                    response.LabelName = model.LabelName;
+                    response.noteID = model.NoteID;
+                    response.UserId = model.userId;
+
+                    this.context.SaveChanges();
+
+
+                    ResponseLable models = new ResponseLable();
+
+                    models.LabelID = response.LabelID;
+                    models.NoteID = response.noteID;
+                    models.UserID = response.UserId;
+                    models.LabelName = response.LabelName;
+
+                    return models;
+                }
+
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+
+
+        public void DeleteLable(long noteid)
+        {
+            try
+            {
+
+                var validUserId = this.context.Label.FirstOrDefault(e => e.noteID == noteid);
+                if (validUserId != null)
+                {
+                 
+                    this.context.Label.Remove(validUserId);
+                    this.context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
     }
 }

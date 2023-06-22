@@ -40,5 +40,17 @@ namespace BusinessLayer.Service
 				throw;
 			}
         }
+        public ResponseLable UpdateLable(long lableid, UpdateLabelModel model)
+        {
+			try
+			{
+				return this.label.UpdateLable(lableid,model);
+			}
+			catch (Exception)
+			{
+
+				throw;
+			}
+		}
     }
 }
