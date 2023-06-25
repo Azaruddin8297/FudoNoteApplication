@@ -325,7 +325,6 @@ namespace FundoNoteApplication.Controllers
             }
             else
             {
-               // customerList = await context.Notes.ToListAsync();
                NoteList = (List<NotesEntity>)this.NoteBL.GetAllNote();
                 serializedCustomerList = JsonConvert.SerializeObject(NoteList);
                 redisCustomerList = Encoding.UTF8.GetBytes(serializedCustomerList);

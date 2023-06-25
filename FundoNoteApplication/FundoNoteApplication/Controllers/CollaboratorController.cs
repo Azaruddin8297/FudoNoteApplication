@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.EntityFrameworkCore;
 
 namespace FundoNoteApplication.Controllers
 {
@@ -115,7 +116,6 @@ namespace FundoNoteApplication.Controllers
             }
             else
             {
-                // customerList = await context.Notes.ToListAsync();
                 CollabList = (List<CollaboratorEntity>)this.collabBL.GetCollab();
                 serializedCustomerList = JsonConvert.SerializeObject(CollabList);
                 redisCustomerList = Encoding.UTF8.GetBytes(serializedCustomerList);
