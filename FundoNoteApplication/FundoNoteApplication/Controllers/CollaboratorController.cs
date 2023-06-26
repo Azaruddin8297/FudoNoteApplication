@@ -43,11 +43,10 @@ namespace FundoNoteApplication.Controllers
 
             try
             {
-                //long userID = Convert.ToInt32(User.Claims.FirstOrDefault(e => e.Type == "UserId").Value);
                 var addresult = collabBL.AddCollaborate(noteid, userID, model);
                 if (addresult != null)
                 {
-                    return this.Ok(new { sucess = true, msg = "New collaborator add sucessfully.", data = addresult }); //SSMD form
+                    return this.Ok(new { sucess = true, msg = "New collaborator add sucessfully.", data = addresult });
                 }
                 else
                 {
@@ -70,7 +69,7 @@ namespace FundoNoteApplication.Controllers
             
             if (deleteResult != null)
             {
-                return this.Ok(new { sucess = true, msg = "Collaborator Deleted sucessfull", data = deleteResult }); //SSMD form
+                return this.Ok(new { sucess = true, msg = "Collaborator Deleted sucessfull", data = deleteResult }); 
             }
             else
             {
@@ -88,7 +87,7 @@ namespace FundoNoteApplication.Controllers
                 var res = this.collabBL.GetCollab();
                 if (res != null)
                 {
-                    return this.Ok(new { sucess = true, msg = "collab", data = res }); //SSMD form
+                    return this.Ok(new { sucess = true, msg = "collab", data = res });
                 }
                 else
                 {

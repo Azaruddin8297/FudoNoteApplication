@@ -115,8 +115,6 @@ namespace FundoNoteApplication.Controllers
               
                 var email = User.Claims.FirstOrDefault(e => e.Type == "Email").Value;
                 var result = userBL.ResetPassword(email, password, confirmPassword);
-
-               // if (userBL.ResetPassword(email, password, confirmPassword))
                 if(result != null)
                 {
                     logger.LogInformation("Reset Password Succesfull");

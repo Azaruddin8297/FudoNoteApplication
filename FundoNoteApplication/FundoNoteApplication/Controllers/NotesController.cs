@@ -89,7 +89,6 @@ namespace FundoNoteApplication.Controllers
         {
             try
             {
-              //  long userID = Convert.ToInt32(User.Claims.FirstOrDefault(user => user.Type == "userID").Value);
                 var addresult = NoteBL.UpdateNote(noteModel, noteID);
                 if (addresult != null)
                 {

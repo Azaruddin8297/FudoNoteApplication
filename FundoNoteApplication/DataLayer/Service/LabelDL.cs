@@ -28,19 +28,14 @@ namespace DataLayer.Service
                     label.noteID = notesId;
                     label.UserId = jwtUserId;
                     label.LabelName = model.LabelName;
-
                     this.context.Add(label);
                     this.context.SaveChanges();
-
                     ResponseLable responseModel = new ResponseLable();
-
                     responseModel.LabelID = label.LabelID;
                     responseModel.NoteID = label.noteID;
                     responseModel.UserID = label.UserId;
                     responseModel.LabelName = label.LabelName;
-
                     return responseModel;
-
                 }
                 else
                 {
@@ -56,7 +51,6 @@ namespace DataLayer.Service
         {
             try
             {
-
                 var result = this.context.Label.ToList();
                 return result;
 
@@ -69,26 +63,19 @@ namespace DataLayer.Service
         public ResponseLable UpdateLable( long lableid,UpdateLabelModel model)
         {
             try
-            { 
-
+            {
                 var response = this.context.Label.FirstOrDefault(e => e.LabelID == lableid);
-
                 if (response != null)
                 {
                     response.LabelName = model.LabelName;
                     response.noteID = model.NoteID;
                     response.UserId = model.userId;
-
                     this.context.SaveChanges();
-
-
                     ResponseLable models = new ResponseLable();
-
                     models.LabelID = response.LabelID;
                     models.NoteID = response.noteID;
                     models.UserID = response.UserId;
                     models.LabelName = response.LabelName;
-
                     return models;
                 }
 
@@ -99,9 +86,6 @@ namespace DataLayer.Service
                 throw;
             }
         }
-
-
-
         public LabelEntity DeleteLable(long labelID)
         {
             try
@@ -110,7 +94,6 @@ namespace DataLayer.Service
                 var validlabel = this.context.Label.FirstOrDefault(e => e.LabelID == labelID);
                 if (validlabel != null)
                 {
-
                     this.context.Label.Remove(validlabel);
                     this.context.SaveChanges();
                     return validlabel;

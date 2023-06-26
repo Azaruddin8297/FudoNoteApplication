@@ -58,7 +58,6 @@ namespace FundoNoteApplication
             services.AddMemoryCache();
             //ReadSettings
             var appSettingsSection = Configuration.GetSection("JwtConfig");
-            //services.Configure<JwtConfig>(appSettingsSection);
             services.AddAuthentication(option =>
             {
                option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
