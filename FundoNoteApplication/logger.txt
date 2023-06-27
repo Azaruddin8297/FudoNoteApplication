@@ -1,0 +1,1085 @@
+2023-06-27 08:42:46.1259|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-06-27 08:42:46.3114|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-27 08:42:46.3439|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys\key-2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020.xml'.
+2023-06-27 08:42:46.3647|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020}.
+2023-06-27 08:42:46.3856|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} with expiration date 2023-09-05 09:10:28Z as default key.
+2023-06-27 08:42:46.4939|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 08:42:46.4939|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2023-06-27 08:42:46.4998|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 08:42:46.4998|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-06-27 08:42:46.4998|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-06-27 08:42:46.4998|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} as the default key.
+2023-06-27 08:42:46.4998|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} was loaded during application startup.
+2023-06-27 08:42:47.2793|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly FundoNoteApplication
+2023-06-27 08:42:47.2793|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-06-27 08:42:47.2793|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-06-27 08:42:47.2806|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-06-27 08:42:47.2806|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-06-27 08:42:47.2806|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\CFP\FundoNoteApplication\FundoNoteApplication
+2023-06-27 08:42:47.2806|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-06-27 08:42:47.3917|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/index.html  
+2023-06-27 08:42:47.4514|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-06-27 08:42:47.4520|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:42:47.5801|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-06-27 08:42:47.9692|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-06-27 08:42:47.9692|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 589.4588ms 200 text/html;charset=utf-8
+2023-06-27 08:42:48.0047|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_framework/aspnetcore-browser-refresh.js  
+2023-06-27 08:42:48.0181|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_vs/browserLink  
+2023-06-27 08:42:48.0554|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 50.6312ms 200 application/javascript; charset=utf-8
+2023-06-27 08:42:48.1551|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 137.0224ms 200 text/javascript; charset=UTF-8
+2023-06-27 08:42:48.7288|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/v1/swagger.json  
+2023-06-27 08:42:48.7288|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:42:49.3541|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 626.3655ms 200 application/json;charset=utf-8
+2023-06-27 08:42:59.3026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/api/User/GetAllUsers  
+2023-06-27 08:42:59.3026|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:42:59.3026|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter
+2023-06-27 08:42:59.3861|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/GetAllUsers'
+2023-06-27 08:42:59.3904|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication)' with route pattern 'api/User/GetAllUsers' is valid for the request path '/api/User/GetAllUsers'
+2023-06-27 08:42:59.3904|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication)'
+2023-06-27 08:42:59.3904|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication)'
+2023-06-27 08:42:59.4091|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2023-06-27 08:42:59.4391|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllUsers", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllUsers() on controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication).
+2023-06-27 08:42:59.4391|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-06-27 08:42:59.4391|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-06-27 08:42:59.4391|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-06-27 08:42:59.4391|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-06-27 08:42:59.4391|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-06-27 08:42:59.4391|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:42:59.8481|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-06-27 08:42:59.8828|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:42:59.8828|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:42:59.8828|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:42:59.8828|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:42:59.8828|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:42:59.8828|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication) - Validation state: Valid
+2023-06-27 08:43:01.1480|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 08:43:01.6315|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    DataLayer.DB.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2023-06-27 08:43:01.6726|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 08:43:02.1907|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (513ms).
+2023-06-27 08:43:02.1907|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:02.7520|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:02.7942|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+2023-06-27 08:43:02.8757|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (106ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+2023-06-27 08:43:02.9963|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.0687|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 08:43:03.0687|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:03.0892|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:03.1006|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    DataLayer.DB.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+2023-06-27 08:43:03.1006|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 08:43:03.1006|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2023-06-27 08:43:03.1006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:03.1006|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:03.1006|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+2023-06-27 08:43:03.1220|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (16ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:03.1261|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:03.1261|INFO|FundoNoteApplication.Controllers.UserController|Succesfull
+2023-06-27 08:43:03.1261|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3240.4395ms.
+2023-06-27 08:43:03.1261|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:43:03.1261|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:43:03.1261|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:43:03.1261|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:43:03.1261|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:43:03.1261|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:43:03.1261|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-06-27 08:43:03.1449|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-06-27 08:43:03.1449|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-06-27 08:43:03.1449|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-27 08:43:03.1449|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-27 08:43:03.1449|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-27 08:43:03.1449|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType11`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[DataLayer.DB.UserEntity, DataLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-06-27 08:43:03.1676|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-06-27 08:43:03.1676|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:43:03.1676|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:43:03.1735|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication) in 3726.6525ms
+2023-06-27 08:43:03.1735|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication)'
+2023-06-27 08:43:03.1735|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundoContext' disposed.
+2023-06-27 08:43:03.1735|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3880.7828ms 200 application/json; charset=utf-8
+2023-06-27 08:43:55.6550|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44326/api/User/Login application/json 47
+2023-06-27 08:43:55.6550|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:43:55.6550|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2023-06-27 08:43:55.6700|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/Login'
+2023-06-27 08:43:55.6700|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)' with route pattern 'api/User/Login' is valid for the request path '/api/User/Login'
+2023-06-27 08:43:55.6700|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:43:55.6700|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:43:55.7673|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(CommonLayer.Models.UserLogin) on controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication).
+2023-06-27 08:43:55.7673|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-06-27 08:43:55.7673|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-06-27 08:43:55.7673|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-06-27 08:43:55.7673|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-06-27 08:43:55.7673|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-06-27 08:43:55.7673|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:43:55.7748|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:43:55.8177|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' ...
+2023-06-27 08:43:55.8177|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' using the name '' in request data ...
+2023-06-27 08:43:55.8177|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-06-27 08:43:55.8596|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Models.UserLogin'
+2023-06-27 08:43:55.8596|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:43:55.8596|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:43:55.8596|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' ...
+2023-06-27 08:43:55.8713|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:43:55.8713|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:43:55.8713|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:43:55.8713|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:43:55.8713|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:43:55.8713|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) - Validation state: Valid
+2023-06-27 08:43:55.8713|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) with arguments (CommonLayer.Models.UserLogin)
+2023-06-27 08:43:55.9651|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 08:43:56.0488|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    DataLayer.DB.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2023-06-27 08:43:56.0648|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 08:43:56.0662|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (1ms).
+2023-06-27 08:43:56.0662|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:56.0662|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:56.1002|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__Login_Email_0='?' (Size = 4000), @__Login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE ([u].[Email] = @__Login_Email_0) AND ([u].[Password] = @__Login_Password_1)
+2023-06-27 08:43:56.2627|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (182ms) [Parameters=[@__Login_Email_0='?' (Size = 4000), @__Login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE ([u].[Email] = @__Login_Email_0) AND ([u].[Password] = @__Login_Password_1)
+2023-06-27 08:43:56.2627|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 08:43:56.2627|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:56.2627|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:43:56.2627|WARN|FundoNoteApplication.Controllers.UserController|Login UnSuccessful
+2023-06-27 08:43:56.2698|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 391.7268ms.
+2023-06-27 08:43:56.2698|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:43:56.2698|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:43:56.2698|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:43:56.2698|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:43:56.2698|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:43:56.2698|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:43:56.2698|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-06-27 08:43:56.2698|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-06-27 08:43:56.2698|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-06-27 08:43:56.2698|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-27 08:43:56.2698|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-27 08:43:56.2698|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-27 08:43:56.2698|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-06-27 08:43:56.2698|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-06-27 08:43:56.2698|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:43:56.2698|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:43:56.2698|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) in 510.0545ms
+2023-06-27 08:43:56.2698|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:43:56.2698|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundoContext' disposed.
+2023-06-27 08:43:56.2698|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 669.3343ms 400 application/json; charset=utf-8
+2023-06-27 08:44:36.0703|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44326/api/User/Login application/json 47
+2023-06-27 08:44:36.0703|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:44:36.0703|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2023-06-27 08:44:36.0703|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/Login'
+2023-06-27 08:44:36.0703|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)' with route pattern 'api/User/Login' is valid for the request path '/api/User/Login'
+2023-06-27 08:44:36.0703|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:44:36.0703|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:44:36.0864|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(CommonLayer.Models.UserLogin) on controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication).
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' ...
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' using the name '' in request data ...
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Models.UserLogin'
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' ...
+2023-06-27 08:44:36.0864|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:44:36.0864|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:44:36.0864|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:44:36.0864|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:44:36.0864|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:44:36.0864|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) - Validation state: Valid
+2023-06-27 08:44:36.0864|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) with arguments (CommonLayer.Models.UserLogin)
+2023-06-27 08:44:36.1168|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 08:44:36.1168|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 08:44:36.1168|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2023-06-27 08:44:36.1168|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:44:36.1168|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:44:36.1168|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__Login_Email_0='?' (Size = 4000), @__Login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE ([u].[Email] = @__Login_Email_0) AND ([u].[Password] = @__Login_Password_1)
+2023-06-27 08:44:36.1326|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (6ms) [Parameters=[@__Login_Email_0='?' (Size = 4000), @__Login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE ([u].[Email] = @__Login_Email_0) AND ([u].[Password] = @__Login_Password_1)
+2023-06-27 08:44:36.1326|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 08:44:36.1326|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:44:36.1326|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:44:36.1326|WARN|FundoNoteApplication.Controllers.UserController|Login UnSuccessful
+2023-06-27 08:44:36.1326|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 37.4591ms.
+2023-06-27 08:44:36.1326|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:44:36.1326|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:44:36.1326|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:44:36.1326|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:44:36.1326|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:44:36.1326|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:44:36.1326|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-06-27 08:44:36.1326|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-06-27 08:44:36.1326|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-06-27 08:44:36.1326|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-27 08:44:36.1326|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-27 08:44:36.1326|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-27 08:44:36.1326|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-06-27 08:44:36.1326|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-06-27 08:44:36.1326|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:44:36.1326|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:44:36.1326|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) in 48.7805ms
+2023-06-27 08:44:36.1326|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:44:36.1326|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundoContext' disposed.
+2023-06-27 08:44:36.1326|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 67.0405ms 400 application/json; charset=utf-8
+2023-06-27 08:45:57.2127|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44326/api/User/Login application/json 62
+2023-06-27 08:45:57.2258|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:45:57.2258|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2023-06-27 08:45:57.2258|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/Login'
+2023-06-27 08:45:57.2258|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)' with route pattern 'api/User/Login' is valid for the request path '/api/User/Login'
+2023-06-27 08:45:57.2258|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:45:57.2310|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:45:57.2310|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(CommonLayer.Models.UserLogin) on controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication).
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' ...
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' using the name '' in request data ...
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Models.UserLogin'
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' ...
+2023-06-27 08:45:57.2310|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:45:57.2310|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:45:57.2310|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:45:57.2310|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:45:57.2310|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:45:57.2310|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) - Validation state: Valid
+2023-06-27 08:45:57.2310|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) with arguments (CommonLayer.Models.UserLogin)
+2023-06-27 08:45:57.2462|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 08:45:57.2462|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 08:45:57.2462|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2023-06-27 08:45:57.2462|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:45:57.2462|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:45:57.2462|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__Login_Email_0='?' (Size = 4000), @__Login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE ([u].[Email] = @__Login_Email_0) AND ([u].[Password] = @__Login_Password_1)
+2023-06-27 08:45:57.2462|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[@__Login_Email_0='?' (Size = 4000), @__Login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE ([u].[Email] = @__Login_Email_0) AND ([u].[Password] = @__Login_Password_1)
+2023-06-27 08:45:57.2462|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 08:45:57.2462|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:45:57.2462|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:45:57.2462|WARN|FundoNoteApplication.Controllers.UserController|Login UnSuccessful
+2023-06-27 08:45:57.2462|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 19.952ms.
+2023-06-27 08:45:57.2617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:45:57.2617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:45:57.2617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:45:57.2617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:45:57.2617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:45:57.2617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:45:57.2617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-06-27 08:45:57.2617|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-06-27 08:45:57.2617|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-06-27 08:45:57.2617|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-27 08:45:57.2617|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-27 08:45:57.2617|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-27 08:45:57.2617|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-06-27 08:45:57.2617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-06-27 08:45:57.2617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:45:57.2617|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:45:57.2617|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) in 32.9022ms
+2023-06-27 08:45:57.2617|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:45:57.2617|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundoContext' disposed.
+2023-06-27 08:45:57.2617|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 60.4978ms 400 application/json; charset=utf-8
+2023-06-27 08:46:06.0086|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44326/api/User/Login application/json 62
+2023-06-27 08:46:06.0086|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:46:06.0086|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2023-06-27 08:46:06.0086|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/Login'
+2023-06-27 08:46:06.0086|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)' with route pattern 'api/User/Login' is valid for the request path '/api/User/Login'
+2023-06-27 08:46:06.0086|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:46:06.0086|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:46:06.0124|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(CommonLayer.Models.UserLogin) on controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication).
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' ...
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' using the name '' in request data ...
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Models.UserLogin'
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' ...
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:46:06.0124|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:46:06.0124|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:46:06.0124|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:46:06.0124|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:46:06.0124|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) - Validation state: Valid
+2023-06-27 08:46:06.0124|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) with arguments (CommonLayer.Models.UserLogin)
+2023-06-27 08:46:06.0124|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:46:06.0124|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:46:06.0280|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__Login_Email_0='?' (Size = 4000), @__Login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE ([u].[Email] = @__Login_Email_0) AND ([u].[Password] = @__Login_Password_1)
+2023-06-27 08:46:06.0280|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__Login_Email_0='?' (Size = 4000), @__Login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE ([u].[Email] = @__Login_Email_0) AND ([u].[Password] = @__Login_Password_1)
+2023-06-27 08:46:06.0280|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 08:46:06.0280|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:46:06.0280|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:46:06.0280|WARN|FundoNoteApplication.Controllers.UserController|Login UnSuccessful
+2023-06-27 08:46:06.0280|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 10.837ms.
+2023-06-27 08:46:06.0280|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:46:06.0280|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:46:06.0280|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:46:06.0280|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:46:06.0280|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:46:06.0280|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:46:06.0280|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-06-27 08:46:06.0280|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-06-27 08:46:06.0280|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-06-27 08:46:06.0280|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-27 08:46:06.0280|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-27 08:46:06.0280|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-27 08:46:06.0280|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-06-27 08:46:06.0280|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-06-27 08:46:06.0280|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:46:06.0280|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:46:06.0280|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) in 20.6283ms
+2023-06-27 08:46:06.0280|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:46:06.0280|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundoContext' disposed.
+2023-06-27 08:46:06.0280|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 26.0152ms 400 application/json; charset=utf-8
+2023-06-27 08:46:36.8131|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44326/api/User/Login application/json 53
+2023-06-27 08:46:36.8131|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:46:36.8131|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2023-06-27 08:46:36.8131|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/Login'
+2023-06-27 08:46:36.8131|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)' with route pattern 'api/User/Login' is valid for the request path '/api/User/Login'
+2023-06-27 08:46:36.8131|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:46:36.8131|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:46:36.8297|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Add", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Add(CommonLayer.Models.UserLogin) on controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication).
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' ...
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' using the name '' in request data ...
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Models.UserLogin'
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin' ...
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'LoginRegistration' of type 'CommonLayer.Models.UserLogin'.
+2023-06-27 08:46:36.8297|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:46:36.8297|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:46:36.8297|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:46:36.8297|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:46:36.8297|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) - Validation state: Valid
+2023-06-27 08:46:36.8297|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) with arguments (CommonLayer.Models.UserLogin)
+2023-06-27 08:46:36.8297|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2023-06-27 08:46:36.8297|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:46:36.8420|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:46:36.8420|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__Login_Email_0='?' (Size = 4000), @__Login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE ([u].[Email] = @__Login_Email_0) AND ([u].[Password] = @__Login_Password_1)
+2023-06-27 08:46:36.8420|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (10ms) [Parameters=[@__Login_Email_0='?' (Size = 4000), @__Login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE ([u].[Email] = @__Login_Email_0) AND ([u].[Password] = @__Login_Password_1)
+2023-06-27 08:46:36.8420|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:46:36.8420|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 08:46:36.8420|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:46:36.8420|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:46:37.7211|INFO|FundoNoteApplication.Controllers.UserController|Login Successful
+2023-06-27 08:46:37.7211|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 883.9097ms.
+2023-06-27 08:46:37.7211|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:46:37.7211|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:46:37.7211|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:46:37.7211|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:46:37.7211|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:46:37.7211|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:46:37.7211|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-06-27 08:46:37.7211|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-06-27 08:46:37.7211|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-06-27 08:46:37.7211|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-27 08:46:37.7211|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-27 08:46:37.7211|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-27 08:46:37.7211|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType10`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-06-27 08:46:37.7211|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-06-27 08:46:37.7211|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:46:37.7211|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:46:37.7211|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication) in 897.9215ms
+2023-06-27 08:46:37.7211|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.UserController.Add (FundoNoteApplication)'
+2023-06-27 08:46:37.7376|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundoContext' disposed.
+2023-06-27 08:46:37.7376|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 925.6382ms 200 application/json; charset=utf-8
+2023-06-27 08:51:15.7968|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-06-27 08:51:15.9854|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-27 08:51:16.0220|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys\key-2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020.xml'.
+2023-06-27 08:51:16.0412|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020}.
+2023-06-27 08:51:16.0605|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} with expiration date 2023-09-05 09:10:28Z as default key.
+2023-06-27 08:51:16.1590|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 08:51:16.1590|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2023-06-27 08:51:16.1590|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 08:51:16.1828|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-06-27 08:51:16.1874|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-06-27 08:51:16.1874|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} as the default key.
+2023-06-27 08:51:16.1874|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} was loaded during application startup.
+2023-06-27 08:51:16.9172|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly FundoNoteApplication
+2023-06-27 08:51:16.9172|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-06-27 08:51:16.9172|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-06-27 08:51:16.9191|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-06-27 08:51:16.9191|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-06-27 08:51:16.9191|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\CFP\FundoNoteApplication\FundoNoteApplication
+2023-06-27 08:51:16.9191|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-06-27 08:51:17.0201|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/index.html  
+2023-06-27 08:51:17.0793|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-06-27 08:51:17.0793|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:51:17.1939|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-06-27 08:51:17.6339|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-06-27 08:51:17.6484|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 632.9224ms 200 text/html;charset=utf-8
+2023-06-27 08:51:17.6907|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_framework/aspnetcore-browser-refresh.js  
+2023-06-27 08:51:17.6907|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_vs/browserLink  
+2023-06-27 08:51:17.7375|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 46.6693ms 200 application/javascript; charset=utf-8
+2023-06-27 08:51:17.9390|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 247.5849ms 200 text/javascript; charset=UTF-8
+2023-06-27 08:51:18.4230|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/v1/swagger.json  
+2023-06-27 08:51:18.4230|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:51:18.6701|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 246.4461ms 200 application/json;charset=utf-8
+2023-06-27 08:51:26.6402|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/api/User/GetAllUsers  
+2023-06-27 08:51:26.6402|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:51:26.6402|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter
+2023-06-27 08:51:26.7324|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/GetAllUsers'
+2023-06-27 08:51:26.7324|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication)' with route pattern 'api/User/GetAllUsers' is valid for the request path '/api/User/GetAllUsers'
+2023-06-27 08:51:26.7324|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication)'
+2023-06-27 08:51:26.7324|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication)'
+2023-06-27 08:51:26.7608|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2023-06-27 08:51:26.7963|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllUsers", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllUsers() on controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication).
+2023-06-27 08:51:26.7963|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-06-27 08:51:26.7963|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-06-27 08:51:26.7963|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-06-27 08:51:26.7963|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-06-27 08:51:26.7963|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-06-27 08:51:26.7963|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:51:27.1662|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-06-27 08:51:27.2060|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 08:51:27.2060|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:51:27.2060|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:51:27.2060|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:51:27.2060|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:51:27.2154|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication) - Validation state: Valid
+2023-06-27 08:51:28.4819|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 08:51:28.9179|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    DataLayer.DB.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2023-06-27 08:51:28.9849|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 08:51:29.3611|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (369ms).
+2023-06-27 08:51:29.3789|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:51:29.8994|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:51:29.9201|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+2023-06-27 08:51:30.0902|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (175ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+2023-06-27 08:51:30.2053|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.2803|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 08:51:30.2803|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:51:30.3008|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:51:30.3098|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    DataLayer.DB.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+2023-06-27 08:51:30.3098|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 08:51:30.3098|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2023-06-27 08:51:30.3098|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:51:30.3098|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:51:30.3098|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+2023-06-27 08:51:30.3329|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (19ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:51:30.3329|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:51:30.3472|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3125.591ms.
+2023-06-27 08:51:30.3472|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:51:30.3472|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:51:30.3472|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:51:30.3472|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:51:30.3472|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:51:30.3472|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:51:30.3472|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-06-27 08:51:30.3472|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-06-27 08:51:30.3568|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-06-27 08:51:30.3568|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-27 08:51:30.3568|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-27 08:51:30.3568|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-27 08:51:30.3568|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType11`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[DataLayer.DB.UserEntity, DataLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-06-27 08:51:30.3784|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-06-27 08:51:30.3784|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:51:30.3784|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:51:30.3784|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication) in 3579.47ms
+2023-06-27 08:51:30.3784|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsers (FundoNoteApplication)'
+2023-06-27 08:51:30.3784|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundoContext' disposed.
+2023-06-27 08:51:30.3906|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3751.7016ms 200 application/json; charset=utf-8
+2023-06-27 08:55:34.8920|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-06-27 08:55:35.1280|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-27 08:55:35.1762|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys\key-2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020.xml'.
+2023-06-27 08:55:35.2014|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020}.
+2023-06-27 08:55:35.2193|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} with expiration date 2023-09-05 09:10:28Z as default key.
+2023-06-27 08:55:35.2897|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 08:55:35.2897|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2023-06-27 08:55:35.2897|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 08:55:35.2897|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-06-27 08:55:35.2897|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-06-27 08:55:35.3080|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} as the default key.
+2023-06-27 08:55:35.3080|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} was loaded during application startup.
+2023-06-27 08:55:36.0557|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly FundoNoteApplication
+2023-06-27 08:55:36.0557|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-06-27 08:55:36.0557|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-06-27 08:55:36.0557|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-06-27 08:55:36.0557|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-06-27 08:55:36.0557|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\CFP\FundoNoteApplication\FundoNoteApplication
+2023-06-27 08:55:36.0557|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-06-27 08:55:36.1652|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/index.html  
+2023-06-27 08:55:36.2342|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-06-27 08:55:36.2342|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:55:36.3420|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-06-27 08:55:37.1288|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-06-27 08:55:37.1363|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 974.4208ms 200 text/html;charset=utf-8
+2023-06-27 08:55:37.1810|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_framework/aspnetcore-browser-refresh.js  
+2023-06-27 08:55:37.1810|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_vs/browserLink  
+2023-06-27 08:55:37.1810|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 13.4079ms 200 application/javascript; charset=utf-8
+2023-06-27 08:55:37.2911|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 108.9868ms 200 text/javascript; charset=UTF-8
+2023-06-27 08:55:37.8130|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/v1/swagger.json  
+2023-06-27 08:55:37.8130|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:55:38.1605|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 347.634ms 200 application/json;charset=utf-8
+2023-06-27 08:56:00.1340|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 PUT https://localhost:44326/api/Notes/Trash?NotesId=9  0
+2023-06-27 08:56:00.1353|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 08:56:00.1353|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|PUT requests are not supported
+2023-06-27 08:56:00.2862|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Notes/Trash'
+2023-06-27 08:56:00.2862|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundoNoteApplication.Controllers.NotesController.TrashNote (FundoNoteApplication)' with route pattern 'api/Notes/Trash' is valid for the request path '/api/Notes/Trash'
+2023-06-27 08:56:00.2910|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundoNoteApplication.Controllers.NotesController.TrashNote (FundoNoteApplication)'
+2023-06-27 08:56:00.2910|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.NotesController.TrashNote (FundoNoteApplication)'
+2023-06-27 08:56:00.3082|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2023-06-27 08:56:00.3721|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "TrashNote", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TrashNote(Int64) on controller FundoNoteApplication.Controllers.NotesController (FundoNoteApplication).
+2023-06-27 08:56:00.3721|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-06-27 08:56:00.3721|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-06-27 08:56:00.3721|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-06-27 08:56:00.3721|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-06-27 08:56:00.3721|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-06-27 08:56:00.3721|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundoNoteApplication.Controllers.NotesController (FundoNoteApplication)
+2023-06-27 08:56:00.8731|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-06-27 08:56:00.9194|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundoNoteApplication.Controllers.NotesController (FundoNoteApplication)
+2023-06-27 08:56:00.9334|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'NotesId' of type 'System.Int64' ...
+2023-06-27 08:56:00.9334|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'NotesId' of type 'System.Int64' using the name 'NotesId' in request data ...
+2023-06-27 08:56:00.9334|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'NotesId' of type 'System.Int64'.
+2023-06-27 08:56:00.9470|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'NotesId' of type 'System.Int64'.
+2023-06-27 08:56:00.9470|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'NotesId' of type 'System.Int64' ...
+2023-06-27 08:56:00.9470|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'NotesId' of type 'System.Int64'.
+2023-06-27 08:56:00.9470|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:56:00.9470|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:56:00.9470|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:56:00.9470|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:56:00.9470|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.NotesController.TrashNote (FundoNoteApplication) - Validation state: Valid
+2023-06-27 08:56:00.9470|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.NotesController.TrashNote (FundoNoteApplication) with arguments (9)
+2023-06-27 08:56:02.2191|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 08:56:02.6747|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<NotesEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, NotesEntity>, 
+    DataLayer.DB.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2023-06-27 08:56:02.7250|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 08:56:03.1048|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (376ms).
+2023-06-27 08:56:03.1362|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:56:03.6811|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:56:03.7027|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__NoteID_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteID], [n].[Color], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Note], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteID] = @__NoteID_0
+2023-06-27 08:56:03.9276|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (233ms) [Parameters=[@__NoteID_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [n].[NoteID], [n].[Color], [n].[Image], [n].[IsArchive], [n].[IsPin], [n].[IsTrash], [n].[Note], [n].[Title], [n].[UserId]
+FROM [Notes] AS [n]
+WHERE [n].[NoteID] = @__NoteID_0
+2023-06-27 08:56:04.0188|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'NotesEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:56:04.0866|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 08:56:04.0926|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:56:04.1038|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:56:04.1038|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'FundoContext'.
+2023-06-27 08:56:04.1038|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'FundoContext'.
+2023-06-27 08:56:04.1662|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Unchanged 'NotesEntity.IsTrash' detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-06-27 08:56:04.1848|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An 'NotesEntity' entity tracked by 'FundoContext' changed from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:56:04.1848|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'FundoContext'.
+2023-06-27 08:56:04.2138|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:56:04.2138|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:56:04.2138|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2023-06-27 08:56:04.2378|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'.
+2023-06-27 08:56:04.3616|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 08:56:04.3616|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2023-06-27 08:56:04.4057|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p1='?' (DbType = Int64), @p0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Notes] SET [IsTrash] = @p0
+WHERE [NoteID] = @p1;
+SELECT @@ROWCOUNT;
+2023-06-27 08:56:04.5808|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (178ms) [Parameters=[@p1='?' (DbType = Int64), @p0='?' (DbType = Boolean)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Notes] SET [IsTrash] = @p0
+WHERE [NoteID] = @p1;
+SELECT @@ROWCOUNT;
+2023-06-27 08:56:04.5808|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 08:56:04.5939|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2023-06-27 08:56:04.6132|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2023-06-27 08:56:04.6132|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:56:04.6132|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 08:56:04.6197|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2023-06-27 08:56:04.6429|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An 'NotesEntity' entity tracked by 'FundoContext' changed from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 08:56:04.6429|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'FundoContext' with 1 entities written to the database.
+2023-06-27 08:56:04.6527|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundoNoteApplication.Controllers.NotesController.TrashNote (FundoNoteApplication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3683.5515ms.
+2023-06-27 08:56:04.6527|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:56:04.6527|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 08:56:04.6527|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:56:04.6527|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 08:56:04.6527|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:56:04.6527|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:56:04.6527|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-06-27 08:56:04.6527|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-06-27 08:56:04.6661|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-06-27 08:56:04.6661|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-27 08:56:04.6661|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-27 08:56:04.6661|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-27 08:56:04.6661|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType2`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-06-27 08:56:04.6661|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-06-27 08:56:04.6661|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:56:04.6661|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 08:56:04.6874|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.NotesController.TrashNote (FundoNoteApplication) in 4305.7088ms
+2023-06-27 08:56:04.6874|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.NotesController.TrashNote (FundoNoteApplication)'
+2023-06-27 08:56:04.6874|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundoContext' disposed.
+2023-06-27 08:56:04.6874|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 4577.7912ms 200 application/json; charset=utf-8
+2023-06-27 09:03:21.2989|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-06-27 09:03:21.5340|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-27 09:03:21.5866|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys\key-2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020.xml'.
+2023-06-27 09:03:21.6158|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020}.
+2023-06-27 09:03:21.6436|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} with expiration date 2023-09-05 09:10:28Z as default key.
+2023-06-27 09:03:21.7527|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 09:03:21.7527|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2023-06-27 09:03:21.7527|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 09:03:21.7657|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-06-27 09:03:21.7657|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-06-27 09:03:21.7657|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} as the default key.
+2023-06-27 09:03:21.7657|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} was loaded during application startup.
+2023-06-27 09:03:22.4588|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly FundoNoteApplication
+2023-06-27 09:03:22.4588|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-06-27 09:03:22.4588|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-06-27 09:03:22.4588|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-06-27 09:03:22.4588|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-06-27 09:03:22.4588|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\CFP\FundoNoteApplication\FundoNoteApplication
+2023-06-27 09:03:22.4588|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-06-27 09:03:22.5439|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/index.html  
+2023-06-27 09:03:22.6055|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-06-27 09:03:22.6055|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 09:03:22.7143|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-06-27 09:03:23.2867|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-06-27 09:03:23.2966|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 757.8041ms 200 text/html;charset=utf-8
+2023-06-27 09:03:23.3544|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_framework/aspnetcore-browser-refresh.js  
+2023-06-27 09:03:23.3544|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_vs/browserLink  
+2023-06-27 09:03:23.3700|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 15.484ms 200 application/javascript; charset=utf-8
+2023-06-27 09:03:23.5039|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 149.4959ms 200 text/javascript; charset=UTF-8
+2023-06-27 09:03:23.9945|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/v1/swagger.json  
+2023-06-27 09:03:23.9945|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 09:03:24.4242|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 430.1234ms 200 application/json;charset=utf-8
+2023-06-27 09:03:45.6146|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44326/api/Notes/Add application/json 157
+2023-06-27 09:03:45.6146|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 09:03:45.6146|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2023-06-27 09:03:45.7214|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Notes/Add'
+2023-06-27 09:03:45.7214|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication)' with route pattern 'api/Notes/Add' is valid for the request path '/api/Notes/Add'
+2023-06-27 09:03:45.7214|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication)'
+2023-06-27 09:03:45.7214|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication)'
+2023-06-27 09:03:45.7431|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2023-06-27 09:03:45.7918|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddNotes(CommonLayer.Models.NoteModel) on controller FundoNoteApplication.Controllers.NotesController (FundoNoteApplication).
+2023-06-27 09:03:45.7918|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-06-27 09:03:45.7918|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-06-27 09:03:45.7918|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-06-27 09:03:45.7918|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-06-27 09:03:45.7918|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-06-27 09:03:45.7918|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundoNoteApplication.Controllers.NotesController (FundoNoteApplication)
+2023-06-27 09:03:46.1037|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-06-27 09:03:46.1522|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundoNoteApplication.Controllers.NotesController (FundoNoteApplication)
+2023-06-27 09:03:46.1653|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'addnote' of type 'CommonLayer.Models.NoteModel' ...
+2023-06-27 09:03:46.1718|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'addnote' of type 'CommonLayer.Models.NoteModel' using the name '' in request data ...
+2023-06-27 09:03:46.1718|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-06-27 09:03:46.1942|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Models.NoteModel'
+2023-06-27 09:03:46.1942|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'addnote' of type 'CommonLayer.Models.NoteModel'.
+2023-06-27 09:03:46.1942|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'addnote' of type 'CommonLayer.Models.NoteModel'.
+2023-06-27 09:03:46.1942|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'addnote' of type 'CommonLayer.Models.NoteModel' ...
+2023-06-27 09:03:46.2048|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'addnote' of type 'CommonLayer.Models.NoteModel'.
+2023-06-27 09:03:46.2048|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:03:46.2048|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:03:46.2048|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:03:46.2048|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:03:46.2048|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication) - Validation state: Valid
+2023-06-27 09:03:46.2048|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication) with arguments (CommonLayer.Models.NoteModel)
+2023-06-27 09:03:47.4996|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 09:03:47.9219|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    DataLayer.DB.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2023-06-27 09:03:47.9712|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 09:03:48.2771|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (304ms).
+2023-06-27 09:03:48.3077|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:49.0187|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:49.0434|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__userID_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__userID_0
+2023-06-27 09:03:49.2708|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (237ms) [Parameters=[@__userID_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__userID_0
+2023-06-27 09:03:49.2907|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 09:03:49.2907|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:49.3065|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:49.3139|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication), returned result Microsoft.AspNetCore.Mvc.BadRequestObjectResult in 3094.815ms.
+2023-06-27 09:03:49.3139|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:03:49.3139|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:03:49.3139|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:03:49.3139|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:03:49.3139|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 09:03:49.3139|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 09:03:49.3139|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-06-27 09:03:49.3139|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-06-27 09:03:49.3139|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-06-27 09:03:49.3139|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-27 09:03:49.3272|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-27 09:03:49.3272|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-27 09:03:49.3272|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-06-27 09:03:49.3272|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.BadRequestObjectResult.
+2023-06-27 09:03:49.3272|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 09:03:49.3272|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 09:03:49.3461|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication) in 3545.6332ms
+2023-06-27 09:03:49.3461|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication)'
+2023-06-27 09:03:49.3461|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundoContext' disposed.
+2023-06-27 09:03:49.3461|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3745.0166ms 400 application/json; charset=utf-8
+2023-06-27 09:03:57.4615|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44326/api/Notes/Add application/json 157
+2023-06-27 09:03:57.4615|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 09:03:57.4615|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|POST requests are not supported
+2023-06-27 09:03:57.5757|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Notes/Add'
+2023-06-27 09:03:57.5757|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication)' with route pattern 'api/Notes/Add' is valid for the request path '/api/Notes/Add'
+2023-06-27 09:03:57.5757|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication)'
+2023-06-27 09:03:57.5757|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication)'
+2023-06-27 09:03:57.5783|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddNotes", controller = "Notes"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddNotes(CommonLayer.Models.NoteModel) on controller FundoNoteApplication.Controllers.NotesController (FundoNoteApplication).
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundoNoteApplication.Controllers.NotesController (FundoNoteApplication)
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundoNoteApplication.Controllers.NotesController (FundoNoteApplication)
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'addnote' of type 'CommonLayer.Models.NoteModel' ...
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Attempting to bind parameter 'addnote' of type 'CommonLayer.Models.NoteModel' using the name '' in request data ...
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter|JSON input formatter succeeded, deserializing to type 'CommonLayer.Models.NoteModel'
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Done attempting to bind parameter 'addnote' of type 'CommonLayer.Models.NoteModel'.
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'addnote' of type 'CommonLayer.Models.NoteModel'.
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'addnote' of type 'CommonLayer.Models.NoteModel' ...
+2023-06-27 09:03:57.5783|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'addnote' of type 'CommonLayer.Models.NoteModel'.
+2023-06-27 09:03:57.5783|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:03:57.5783|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:03:57.5783|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:03:57.5783|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:03:57.5783|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication) - Validation state: Valid
+2023-06-27 09:03:57.5783|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication) with arguments (CommonLayer.Models.NoteModel)
+2023-06-27 09:03:57.6541|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 09:03:57.6601|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 09:03:57.6601|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2023-06-27 09:03:57.6601|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:57.6601|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:57.6601|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__userID_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__userID_0
+2023-06-27 09:03:57.6839|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (21ms) [Parameters=[@__userID_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__userID_0
+2023-06-27 09:03:57.7695|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 09:03:57.8177|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 09:03:57.8177|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:57.8177|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:57.8607|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|'FundoContext' generated a temporary value for the 'NoteID' property of new 'NotesEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 09:03:57.9159|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'NotesEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 09:03:57.9159|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges starting for 'FundoContext'.
+2023-06-27 09:03:57.9238|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges starting for 'FundoContext'.
+2023-06-27 09:03:57.9663|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|DetectChanges completed for 'FundoContext'.
+2023-06-27 09:03:57.9795|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:57.9795|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:57.9857|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Beginning transaction with isolation level 'Unspecified'.
+2023-06-27 09:03:58.0001|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Began transaction with isolation level 'ReadCommitted'.
+2023-06-27 09:03:58.0938|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 09:03:58.0938|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2023-06-27 09:03:58.0938|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Notes] ([Color], [Image], [IsArchive], [IsPin], [IsTrash], [Note], [Title], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [NoteID]
+FROM [Notes]
+WHERE @@ROWCOUNT = 1 AND [NoteID] = scope_identity();
+2023-06-27 09:03:58.1901|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (93ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Notes] ([Color], [Image], [IsArchive], [IsPin], [IsTrash], [Note], [Title], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [NoteID]
+FROM [Notes]
+WHERE @@ROWCOUNT = 1 AND [NoteID] = scope_identity();
+2023-06-27 09:03:58.2201|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Foreign key property 'NotesEntity.NoteID' detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2023-06-27 09:03:58.2201|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 09:03:58.2201|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2023-06-27 09:03:58.2391|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Committing transaction.
+2023-06-27 09:03:58.2391|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:58.2391|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:03:58.2391|DEBUG|Microsoft.EntityFrameworkCore.Database.Transaction|Disposing transaction.
+2023-06-27 09:03:58.2588|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|An 'NotesEntity' entity tracked by 'FundoContext' changed from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 09:03:58.2588|DEBUG|Microsoft.EntityFrameworkCore.Update|SaveChanges completed for 'FundoContext' with 1 entities written to the database.
+2023-06-27 09:04:06.3304|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:04:06.3304|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:04:06.3304|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:04:06.3304|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:04:06.3304|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication) in 8755.1299ms
+2023-06-27 09:04:06.3304|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.NotesController.AddNotes (FundoNoteApplication)'
+2023-06-27 09:04:06.3304|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.DivideByZeroException: Attempted to divide by zero.
+   at FundoNoteApplication.Controllers.NotesController.AddNotes(NoteModel addnote) in D:\CFP\FundoNoteApplication\FundoNoteApplication\Controllers\NotesController.cs:line 54
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-27 09:04:06.5265|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundoContext' disposed.
+2023-06-27 09:04:06.5265|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 9065.4741ms 500 text/plain
+2023-06-27 09:14:40.2724|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-06-27 09:14:40.3901|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-27 09:14:40.4102|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys\key-2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020.xml'.
+2023-06-27 09:14:40.4254|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020}.
+2023-06-27 09:14:40.4373|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} with expiration date 2023-09-05 09:10:28Z as default key.
+2023-06-27 09:14:40.5198|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 09:14:40.5228|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2023-06-27 09:14:40.5228|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 09:14:40.5228|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-06-27 09:14:40.5228|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-06-27 09:14:40.5428|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} as the default key.
+2023-06-27 09:14:40.5428|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} was loaded during application startup.
+2023-06-27 09:14:41.0700|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly FundoNoteApplication
+2023-06-27 09:14:41.0700|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-06-27 09:14:41.0700|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-06-27 09:14:41.0700|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-06-27 09:14:41.0700|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-06-27 09:14:41.0700|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\CFP\FundoNoteApplication\FundoNoteApplication
+2023-06-27 09:14:41.0700|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-06-27 09:14:41.2840|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/index.html  
+2023-06-27 09:14:41.3235|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-06-27 09:14:41.3235|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 09:14:41.3930|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-06-27 09:14:41.6960|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-06-27 09:14:41.6960|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 422.3385ms 200 text/html;charset=utf-8
+2023-06-27 09:14:41.7256|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_framework/aspnetcore-browser-refresh.js  
+2023-06-27 09:14:41.7256|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_vs/browserLink  
+2023-06-27 09:14:41.7414|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 15.7757ms 200 application/javascript; charset=utf-8
+2023-06-27 09:14:41.8607|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 128.1361ms 200 text/javascript; charset=UTF-8
+2023-06-27 09:14:42.2624|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/v1/swagger.json  
+2023-06-27 09:14:42.2624|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 09:14:42.5040|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 241.8919ms 200 application/json;charset=utf-8
+2023-06-27 09:14:55.8124|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/api/User/GetAllUsersbyID?userid=1  
+2023-06-27 09:14:55.8124|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 09:14:55.8124|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter
+2023-06-27 09:14:55.8803|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/User/GetAllUsersbyID'
+2023-06-27 09:14:55.8832|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsersbyID (FundoNoteApplication)' with route pattern 'api/User/GetAllUsersbyID' is valid for the request path '/api/User/GetAllUsersbyID'
+2023-06-27 09:14:55.8832|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsersbyID (FundoNoteApplication)'
+2023-06-27 09:14:55.8832|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsersbyID (FundoNoteApplication)'
+2023-06-27 09:14:55.9000|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2023-06-27 09:14:55.9470|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllUsersbyID", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllUsersbyID(Int64) on controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication).
+2023-06-27 09:14:55.9470|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2023-06-27 09:14:55.9470|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2023-06-27 09:14:55.9470|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-06-27 09:14:55.9470|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2023-06-27 09:14:55.9470|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-06-27 09:14:55.9470|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 09:14:56.3373|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-06-27 09:14:56.3749|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication)
+2023-06-27 09:14:56.3881|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'userid' of type 'System.Int64' ...
+2023-06-27 09:14:56.3984|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'userid' of type 'System.Int64' using the name 'userid' in request data ...
+2023-06-27 09:14:56.3984|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'userid' of type 'System.Int64'.
+2023-06-27 09:14:56.3984|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'userid' of type 'System.Int64'.
+2023-06-27 09:14:56.3984|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'userid' of type 'System.Int64' ...
+2023-06-27 09:14:56.3984|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'userid' of type 'System.Int64'.
+2023-06-27 09:14:56.3984|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:14:56.3984|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:14:56.3984|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:14:56.3984|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:14:56.3984|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.GetAllUsersbyID (FundoNoteApplication) - Validation state: Valid
+2023-06-27 09:14:56.3984|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method FundoNoteApplication.Controllers.UserController.GetAllUsersbyID (FundoNoteApplication) with arguments (1)
+2023-06-27 09:14:57.4748|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 09:14:57.7799|DEBUG|Microsoft.EntityFrameworkCore.Query|queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    DataLayer.DB.FundoContext, 
+    DiagnosticsLogger<Query>
+)
+    .SingleOrDefault()
+2023-06-27 09:14:57.8248|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2023-06-27 09:14:58.2171|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (388ms).
+2023-06-27 09:14:58.2441|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:14:58.5425|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:14:58.5532|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2023-06-27 09:14:58.6692|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (119ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[RegisterAt]
+FROM [UserTable] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2023-06-27 09:14:58.7794|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'FundoContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-06-27 09:14:58.8400|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader was disposed.
+2023-06-27 09:14:58.8400|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:14:58.8513|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'FundoDB' on server '(localdb)\MSSQLLocalDB'.
+2023-06-27 09:14:58.8513|INFO|FundoNoteApplication.Controllers.UserController|Succesfull
+2023-06-27 09:14:58.8513|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method FundoNoteApplication.Controllers.UserController.GetAllUsersbyID (FundoNoteApplication), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2440.9511ms.
+2023-06-27 09:14:58.8513|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:14:58.8513|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-06-27 09:14:58.8513|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:14:58.8513|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-06-27 09:14:58.8513|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 09:14:58.8513|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 09:14:58.8513|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-06-27 09:14:58.8513|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-06-27 09:14:58.8661|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2023-06-27 09:14:58.8661|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-06-27 09:14:58.8661|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2023-06-27 09:14:58.8661|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-06-27 09:14:58.8661|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType11`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[DataLayer.DB.UserEntity, DataLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-06-27 09:14:58.8848|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2023-06-27 09:14:58.8848|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 09:14:58.8848|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-06-27 09:14:58.8848|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.UserController.GetAllUsersbyID (FundoNoteApplication) in 2935.4871ms
+2023-06-27 09:14:58.8848|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.UserController.GetAllUsersbyID (FundoNoteApplication)'
+2023-06-27 09:14:58.8848|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'FundoContext' disposed.
+2023-06-27 09:14:58.8848|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 3083.2874ms 200 application/json; charset=utf-8

@@ -44,7 +44,7 @@ namespace FundoNoteApplication.Controllers
                 var addresult = labelBL.CreateLable(noteid, userid, model);
                 if (addresult != null)
                 {
-                    return this.Ok(new { sucess = true, msg = "Label Added", data = addresult }); //SSMD form
+                    return this.Ok(new { sucess = true, msg = "Label Added", data = addresult });
                 }
                 else
                 {
@@ -68,7 +68,7 @@ namespace FundoNoteApplication.Controllers
                 var res = this.labelBL.GetAllLable();
                 if (res != null)
                 {
-                    return this.Ok(new { sucess = true, msg = "Label", data = res }); //SSMD form
+                    return this.Ok(new { sucess = true, msg = "Label", data = res }); 
                 }
                 else
                 {
@@ -95,7 +95,6 @@ namespace FundoNoteApplication.Controllers
             }
             else
             {
-                // customerList = await context.Notes.ToListAsync();
                 LabelList = (List<LabelEntity>)this.labelBL.GetAllLable();
                 serializedCustomerList = JsonConvert.SerializeObject(LabelList);
                 redisCustomerList = Encoding.UTF8.GetBytes(serializedCustomerList);

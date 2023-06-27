@@ -90,7 +90,6 @@ namespace DataLayer.Service
         {
             try
             {
-
                 var validlabel = this.context.Label.FirstOrDefault(e => e.LabelID == labelID);
                 if (validlabel != null)
                 {

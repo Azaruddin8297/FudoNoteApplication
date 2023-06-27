@@ -83,7 +83,6 @@ namespace FundoNoteApplication.Controllers
         {
             try
             {
-
                 var res = this.collabBL.GetCollab();
                 if (res != null)
                 {

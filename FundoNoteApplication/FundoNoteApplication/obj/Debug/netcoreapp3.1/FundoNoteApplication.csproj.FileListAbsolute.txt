@@ -100,7 +100,6 @@ D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\Pipelin
 D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
 D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
 D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
-D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\NLog.config
 D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\NLog.dll
 D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
 D:\CFP\FundoNoteApplication\FundoNoteApplication\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll

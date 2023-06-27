@@ -37,6 +37,7 @@
           "Microsoft.EntityFrameworkCore.Design": "3.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.0",
           "Microsoft.Extensions.Caching.StackExchangeRedis": "3.1.0",
+          "NLog": "5.2.0",
           "NLog.Config": "4.7.15",
           "NLog.Web.AspNetCore": "5.3.0",
           "Swashbuckle.AspNetCore": "6.5.0",

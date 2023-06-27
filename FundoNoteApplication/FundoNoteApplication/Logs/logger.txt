@@ -1,0 +1,122 @@
+2023-06-27 09:27:45.9625|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-06-27 09:27:46.0913|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-27 09:27:46.1155|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys\key-2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020.xml'.
+2023-06-27 09:27:46.1345|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020}.
+2023-06-27 09:27:46.1629|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} with expiration date 2023-09-05 09:10:28Z as default key.
+2023-06-27 09:27:46.2756|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 09:27:46.2792|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2023-06-27 09:27:46.2792|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 09:27:46.2792|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-06-27 09:27:46.2792|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-06-27 09:27:46.3040|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} as the default key.
+2023-06-27 09:27:46.3040|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} was loaded during application startup.
+2023-06-27 09:27:46.9440|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly FundoNoteApplication
+2023-06-27 09:27:46.9440|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-06-27 09:27:46.9440|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-06-27 09:27:46.9440|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-06-27 09:27:46.9440|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-06-27 09:27:46.9440|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\CFP\FundoNoteApplication\FundoNoteApplication
+2023-06-27 09:27:46.9440|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-06-27 09:27:47.0623|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/index.html  
+2023-06-27 09:27:47.1126|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-06-27 09:27:47.1126|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 09:27:47.2022|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-06-27 09:27:47.4987|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-06-27 09:27:47.4987|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 446.1221ms 200 text/html;charset=utf-8
+2023-06-27 09:27:47.5539|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_framework/aspnetcore-browser-refresh.js  
+2023-06-27 09:27:47.5621|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 8.2236ms 200 application/javascript; charset=utf-8
+2023-06-27 09:27:47.5934|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_vs/browserLink  
+2023-06-27 09:27:47.8074|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 214.0407ms 200 text/javascript; charset=UTF-8
+2023-06-27 09:27:48.4827|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/v1/swagger.json  
+2023-06-27 09:27:48.4827|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 09:27:48.8293|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 346.6734ms 200 application/json;charset=utf-8
+2023-06-27 09:39:01.6884|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-06-27 09:39:01.8935|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-27 09:39:01.9165|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys\key-2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020.xml'.
+2023-06-27 09:39:01.9461|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020}.
+2023-06-27 09:39:01.9689|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} with expiration date 2023-09-05 09:10:28Z as default key.
+2023-06-27 09:39:02.0536|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 09:39:02.0536|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2023-06-27 09:39:02.0536|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 09:39:02.0626|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-06-27 09:39:02.0626|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-06-27 09:39:02.0626|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} as the default key.
+2023-06-27 09:39:02.0626|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} was loaded during application startup.
+2023-06-27 09:39:02.7314|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly FundoNoteApplication
+2023-06-27 09:39:02.7314|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-06-27 09:39:02.7314|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-06-27 09:39:02.7314|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-06-27 09:39:02.7314|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-06-27 09:39:02.7314|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\CFP\FundoNoteApplication\FundoNoteApplication
+2023-06-27 09:39:02.7314|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-06-27 09:39:02.8114|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/index.html  
+2023-06-27 09:39:02.8541|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-06-27 09:39:02.9323|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-06-27 09:39:03.2350|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-06-27 09:39:03.2350|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 433.4569ms 200 text/html;charset=utf-8
+2023-06-27 09:39:03.2728|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_framework/aspnetcore-browser-refresh.js  
+2023-06-27 09:39:03.2800|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 7.1935ms 200 application/javascript; charset=utf-8
+2023-06-27 09:39:03.3167|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_vs/browserLink  
+2023-06-27 09:39:03.3548|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 38.1365ms 200 text/javascript; charset=UTF-8
+2023-06-27 09:39:04.0225|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/v1/swagger.json  
+2023-06-27 09:39:04.3603|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 337.9385ms 200 application/json;charset=utf-8
+2023-06-27 09:42:34.5031|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-27 09:42:35.1685|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-06-27 09:42:35.1685|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-06-27 09:42:35.1685|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\CFP\FundoNoteApplication\FundoNoteApplication
+2023-06-27 09:42:35.2328|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/index.html  
+2023-06-27 09:42:35.6420|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 411.662ms 200 text/html;charset=utf-8
+2023-06-27 09:42:35.6654|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_framework/aspnetcore-browser-refresh.js  
+2023-06-27 09:42:35.6727|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_vs/browserLink  
+2023-06-27 09:42:35.6727|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 10.2016ms 200 application/javascript; charset=utf-8
+2023-06-27 09:42:35.8454|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 172.6965ms 200 text/javascript; charset=UTF-8
+2023-06-27 09:42:36.4896|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/v1/swagger.json  
+2023-06-27 09:42:36.8501|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 360.5145ms 200 application/json;charset=utf-8
+2023-06-27 09:42:48.0731|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 POST https://localhost:44326/api/User/register application/json 449
+2023-06-27 09:42:48.1282|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'FundoNoteApplication.Controllers.UserController.register (FundoNoteApplication)'
+2023-06-27 09:42:48.1784|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "register", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult register(CommonLayer.Models.UserRegistration) on controller FundoNoteApplication.Controllers.UserController (FundoNoteApplication).
+2023-06-27 09:42:49.6186|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 3.1.0 initialized 'FundoContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-06-27 09:42:50.6495|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (96ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [UserTable] ([Email], [FirstName], [LastName], [Password], [RegisterAt])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [UserId]
+FROM [UserTable]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity();
+2023-06-27 09:42:50.7552|INFO|FundoNoteApplication.Controllers.UserController|Registration Successful
+2023-06-27 09:42:50.7552|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[DataLayer.DB.UserEntity, DataLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-06-27 09:42:50.7832|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action FundoNoteApplication.Controllers.UserController.register (FundoNoteApplication) in 2599.1558ms
+2023-06-27 09:42:50.7832|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'FundoNoteApplication.Controllers.UserController.register (FundoNoteApplication)'
+2023-06-27 09:42:50.7832|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 2718.4841ms 200 application/json; charset=utf-8
+2023-06-27 10:00:38.9759|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2023-06-27 10:00:39.1242|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-06-27 10:00:39.1476|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\ajarp\AppData\Local\ASP.NET\DataProtection-Keys\key-2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020.xml'.
+2023-06-27 10:00:39.1630|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020}.
+2023-06-27 10:00:39.1812|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} with expiration date 2023-09-05 09:10:28Z as default key.
+2023-06-27 10:00:39.2404|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 10:00:39.2404|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI.
+2023-06-27 10:00:39.2404|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-06-27 10:00:39.2404|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-06-27 10:00:39.2516|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-06-27 10:00:39.2516|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} as the default key.
+2023-06-27 10:00:39.2516|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {2f1cb6e9-4bde-45ef-8a46-b25d6cd6f020} was loaded during application startup.
+2023-06-27 10:00:39.8986|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly FundoNoteApplication
+2023-06-27 10:00:39.8986|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-06-27 10:00:39.8986|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-06-27 10:00:39.8986|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2023-06-27 10:00:39.8986|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2023-06-27 10:00:39.8986|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\CFP\FundoNoteApplication\FundoNoteApplication
+2023-06-27 10:00:39.8986|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2023-06-27 10:00:39.9997|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/index.html  
+2023-06-27 10:00:40.0547|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2023-06-27 10:00:40.0547|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 10:00:40.1483|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2023-06-27 10:00:40.4016|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2023-06-27 10:00:40.4088|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 411.558ms 200 text/html;charset=utf-8
+2023-06-27 10:00:40.4318|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_framework/aspnetcore-browser-refresh.js  
+2023-06-27 10:00:40.4318|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/_vs/browserLink  
+2023-06-27 10:00:40.4318|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 6.7544ms 200 application/javascript; charset=utf-8
+2023-06-27 10:00:40.5469|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 114.3456ms 200 text/javascript; charset=UTF-8
+2023-06-27 10:00:41.1327|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2.0 GET https://localhost:44326/swagger/v1/swagger.json  
+2023-06-27 10:00:41.1327|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2023-06-27 10:00:41.3310|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished in 198.5583ms 200 application/json;charset=utf-8

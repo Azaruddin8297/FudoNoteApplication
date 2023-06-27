@@ -15,6 +15,7 @@ using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 namespace FundoNoteApplication.Controllers
 {
@@ -26,12 +27,14 @@ namespace FundoNoteApplication.Controllers
         private readonly FundoContext context;
         public readonly IMemoryCache memoryCache;
         public readonly IDistributedCache distributedCache;
-        public NotesController(INotesBL NoteBL,FundoContext context, IMemoryCache memoryCache, IDistributedCache distributedCache)
+        private readonly ILogger<NotesController> logger;
+        public NotesController(INotesBL NoteBL,FundoContext context, IMemoryCache memoryCache, IDistributedCache distributedCache, ILogger<NotesController> logger)
         {
             this.NoteBL = NoteBL;
             this.context = context;
             this.memoryCache = memoryCache;
             this.distributedCache = distributedCache;
+            this.logger = logger;
         }
         [HttpPost("Add")]
         public IActionResult AddNotes(NoteModel addnote )
@@ -92,7 +95,7 @@ namespace FundoNoteApplication.Controllers
                 var addresult = NoteBL.UpdateNote(noteModel, noteID);
                 if (addresult != null)
                 {
-                    return this.Ok(new { sucess = true, msg = "Note updated sucessfull", data = addresult }); //SSMD form
+                    return this.Ok(new { sucess = true, msg = "Note updated sucessfull", data = addresult });
                 }
                 else
                 {
