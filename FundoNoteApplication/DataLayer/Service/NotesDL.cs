@@ -25,6 +25,11 @@ namespace DataLayer.Service
             this.Config = Config;
 
         }
+        /// <summary>
+        /// Checking the Enterd Id is correct or not
+        /// </summary>
+        /// <param name="userID"></param>
+        /// <returns></returns>
         public bool CheckUserId(long userID)
         {
             try
@@ -43,6 +48,11 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// This Method is Used for Adding Notes
+        /// </summary>
+        /// <param name="notes"></param>
+        /// <returns></returns>
         public NotesEntity AddNote(NoteModel notes)
         {
             try
@@ -55,10 +65,6 @@ namespace DataLayer.Service
                 notesEntity.IsArchive = notes.IsArchive;
                 notesEntity.IsPin = notes.IsPin;
                 notesEntity.UserId = notes.UserId;
-           //   notesEntity.Createat = DateTime.Now;
-                //this.context.Notes.Add(notesEntity);
-                //int result = this.context.SaveChanges();
-
                 this.context.Notes.Add(notesEntity);  
                 this.context.SaveChanges(); 
 
@@ -75,6 +81,11 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// This Method is Used for Deleting the Notes Using NoteID
+        /// </summary>
+        /// <param name="NoteId"></param>
+        /// <returns></returns>
         public NotesEntity DeleteNote(long NoteId)
         {
             try
@@ -97,6 +108,12 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// Updating the Notes
+        /// </summary>
+        /// <param name="noteModel"></param>
+        /// <param name="NoteId"></param>
+        /// <returns></returns>
         public NotesEntity UpdateNote(NoteModel noteModel, long NoteId)
         {
             try
@@ -126,6 +143,11 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// This Method is Used for Changing pin
+        /// </summary>
+        /// <param name="NoteID"></param>
+        /// <returns></returns>
         public bool Pinned(long NoteID)
         {
             try
@@ -142,6 +164,11 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// This Method is Used for Changing Trash
+        /// </summary>
+        /// <param name="NoteID"></param>
+        /// <returns></returns>
         public bool Trashed(long NoteID)
         {
             try
@@ -158,6 +185,11 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// This Method is Used for Changing Archiev
+        /// </summary>
+        /// <param name="NoteID"></param>
+        /// <returns></returns>
         public bool Archieved(long NoteID)
         {
             try
@@ -173,7 +205,12 @@ namespace DataLayer.Service
                 throw;
             }
         }
-
+        /// <summary>
+        /// This Method is Used for Changing Color of the Notes
+        /// </summary>
+        /// <param name="NoteId"></param>
+        /// <param name="color"></param>
+        /// <returns></returns>
         public NotesEntity ColorNote(long NoteId, string color)
         {
             var result = context.Notes.Where(r => r.NoteID == NoteId).FirstOrDefault();
@@ -191,6 +228,13 @@ namespace DataLayer.Service
                 return null;
             }
         }
+        /// <summary>
+        /// This Method is Used for Inserting the Image
+        /// </summary>
+        /// <param name="NoteID"></param>
+        /// <param name="image"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
         public string Imaged(long NoteID, IFormFile image)
         {
             try
@@ -212,7 +256,6 @@ namespace DataLayer.Service
                     var uploadResult = cloudinary.Upload(uploadParameters);
                     string imagePath = uploadResult.Url.ToString();
                     result.Image = image.FileName;
-                  //  result.Image = imagePath;
                     context.SaveChanges();
                     return "Image Upload Successfully";
                 }
@@ -226,14 +269,14 @@ namespace DataLayer.Service
                 throw new Exception(ex.Message);
             }
         }
-
+        /// <summary>
+        /// This Method is Used for Searching Notes by Query
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
         public IEnumerable<NotesEntity> Search(string query)
-        {
-           
-            
+        { 
             var result = this.context.Notes.Where(e => e.Title.Contains(query));
-           // var output = result.ToList();
-
             if(result != null)
             {
                 return result;
@@ -241,6 +284,10 @@ namespace DataLayer.Service
             else return null;
             
         }
+        /// <summary>
+        /// This Method is Used for Getting All Notes
+        /// </summary>
+        /// <returns></returns>
         public List<NotesEntity> GetAllNote()
         {
             try

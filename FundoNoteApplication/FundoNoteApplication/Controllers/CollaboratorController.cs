@@ -20,27 +20,21 @@ namespace FundoNoteApplication.Controllers
     [Route("api/[controller]")]
     [ApiController]
     public class CollaboratorController : ControllerBase
-    {
-        
+    {        
         public readonly ICollabBL collabBL;
         public readonly IMemoryCache memoryCache;
         public readonly IDistributedCache distributedCache;
         public readonly FundoContext context;
-
         public CollaboratorController( ICollabBL collabBL,IMemoryCache memoryCache, FundoContext context,IDistributedCache distributedCache)
         {
-
             this.collabBL = collabBL;
             this.memoryCache = memoryCache;
             this.distributedCache = distributedCache;
             this.context = context;
         }
-
-    [HttpPost]
-        [Route("AddCollaborator")]
+        [HttpPost]
         public IActionResult AddCollaborator(long noteid, long userID, CollabModel model)
         {
-
             try
             {
                 var addresult = collabBL.AddCollaborate(noteid, userID, model);
@@ -55,14 +49,10 @@ namespace FundoNoteApplication.Controllers
             }
             catch (Exception)
             {
-
                 throw;
-            }
-           
+            }           
         }
         [HttpDelete]
-        [Route("deletecollaborator")]
-
         public IActionResult deletecollaborator(long collaboratorID)
         {
             var deleteResult = collabBL.DeleteCollaborator(collaboratorID);
@@ -75,10 +65,8 @@ namespace FundoNoteApplication.Controllers
             {
                 return this.BadRequest(new { sucess = false, msg = "Collaborator not Deleted" });
             }
-
         }
         [HttpGet]
-        [Route("ReadAll")]
         public IActionResult ReadAll()
         {
             try
@@ -95,11 +83,9 @@ namespace FundoNoteApplication.Controllers
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
-
         [HttpGet("redis")]
         public async Task<IActionResult> GetAllCustomersUsingRedisCache()
         {

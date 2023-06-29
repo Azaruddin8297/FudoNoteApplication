@@ -35,7 +35,6 @@ namespace FundoNoteApplication.Controllers
         }
 
         [HttpPost]
-        [Route("AddLabel")]
         public IActionResult AddLabel(long noteid , long userid, LableModel model)
         {
 
@@ -59,7 +58,6 @@ namespace FundoNoteApplication.Controllers
 
         }
         [HttpGet]
-        [Route("ReadAll")]
         public IActionResult ReadAll()
         {
             try
@@ -106,7 +104,6 @@ namespace FundoNoteApplication.Controllers
             return Ok(LabelList);
         }
         [HttpPut]
-        [Route("Update")]
         public IActionResult UpdateLable(long lableId, UpdateLabelModel model)
         {
             try

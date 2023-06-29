@@ -36,7 +36,7 @@ namespace FundoNoteApplication.Controllers
             this.distributedCache = distributedCache;
             this.logger = logger;
         }
-        [HttpPost("Add")]
+        [HttpPost]
         public IActionResult AddNotes(NoteModel addnote )
         {
             try
@@ -87,7 +87,7 @@ namespace FundoNoteApplication.Controllers
                 throw;
             }
         }
-        [HttpPost("Update")]
+        [HttpPut]
         public IActionResult UpdateNotes(NoteModel noteModel,long noteID)
         {
             try

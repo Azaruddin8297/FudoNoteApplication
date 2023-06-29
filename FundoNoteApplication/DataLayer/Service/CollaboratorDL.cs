@@ -16,9 +16,13 @@ namespace DataLayer.Service
         {
                 this.context = context;
         }
-
-      
-
+        /// <summary>
+        /// This Method is Used for Adding Collaborators
+        /// </summary>
+        /// <param name="noteID"></param>
+        /// <param name="userID"></param>
+        /// <param name="model"></param>
+        /// <returns></returns>
         public CollaboratorEntity AddCollaborate(long noteID, long userID, CollabModel model)
         {
             try
@@ -45,6 +49,11 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// This Method is Used to Delete the Collab
+        /// </summary>
+        /// <param name="collaboratorID"></param>
+        /// <returns></returns>
         public CollaboratorEntity DeleteCollaborator(long collaboratorID)
         {
             try
@@ -64,6 +73,10 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// This Method is Used to get all Collaboratorss
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<CollaboratorEntity> GetCollab()
         {
             try

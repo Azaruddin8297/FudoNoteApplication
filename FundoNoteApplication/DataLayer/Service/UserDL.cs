@@ -24,6 +24,11 @@ namespace DataLayer.Service
             _secret = appsettings.GetSection("JwtConfig").GetSection("secret").Value;
             _expDate = appsettings.GetSection("JwtConfig").GetSection("expirationInMinutes").Value;
         }
+        /// <summary>
+        /// Register the user 
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
         public UserEntity Register(UserRegistration user)
         {
             try
@@ -47,19 +52,24 @@ namespace DataLayer.Service
 
                 throw;
             }
-        }
-
-       
+        } 
+        /// <summary>
+        /// Login the user who was registered
+        /// </summary>
+        /// <param name="Login"></param>
+        /// <returns></returns>
         public string Login(UserLogin Login)
         {
-
             try
             {
                 UserEntity entity = new UserEntity();
                 entity = this.context.UserTable.FirstOrDefault(x => x.Email == Login.Email && x.Password == Login.Password);
                 if (entity != null)
                 {
-                    var Token = GenerateSecurityToken(entity.Email, entity.UserId);
+                    var mail = entity.Email;
+                    var id = entity.UserId;
+                  //  string pass = ;
+                    var Token = GenerateSecurityToken(mail, id);
                     return Token;
                 }
                 else return null;
@@ -71,6 +81,12 @@ namespace DataLayer.Service
             }
 
         }
+        /// <summary>
+        /// Generating Token Using Email and UserId
+        /// </summary>
+        /// <param name="Email"></param>
+        /// <param name="UserID"></param>
+        /// <returns></returns>
         public string GenerateSecurityToken(string Email, long UserID)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -91,6 +107,11 @@ namespace DataLayer.Service
             return tokenHandler.WriteToken(token);
 
         }
+        /// <summary>
+        /// If user Forget the PassWord we can send token to the Email
+        /// </summary>
+        /// <param name="EmailId"></param>
+        /// <returns></returns>
         public string ForgetPassword(string EmailId)
         {
             try
@@ -112,32 +133,53 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// Reseting the Password 
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="password"></param>
+        /// <param name="confirmPassword"></param>
+        /// <returns></returns>
         public string ResetPassword(string email, string password, string confirmPassword)
         {
             try
             {
-                UserEntity userEntity = new UserEntity();
-                userEntity = context.UserTable.FirstOrDefault(x => x.Email == email);
-                if (userEntity != null)
+                if (password.Equals(confirmPassword))
                 {
+                    UserEntity userEntity = context.UserTable.FirstOrDefault(x => x.Email == email);
                     userEntity.Password = password;
-                    context.SaveChanges();
-                    return "Done";
+                    if (userEntity != null)
+                    {
+                        context.SaveChanges();
+                        return "Your password has been reset.";
+                    }
+                    else
+                    {
+                        return null;
+                    }
                 }
+                //UserEntity userEntity = new UserEntity();
+                //userEntity = context.UserTable.FirstOrDefault(x => x.Email == email);
+                //if (userEntity != null)
+                //{
+                //    userEntity.Password = password;
+                //    context.SaveChanges();
+                //    return "Done";
+                //}
                 else
                 {
                     return null;
                 }
-
-
             }
             catch (Exception)
             {
-
                 throw;
             }
-
         }
+        /// <summary>
+        /// Retriving all registered Users
+        /// </summary>
+        /// <returns></returns>
         public List<UserEntity> GetAllUsers()
         {
            var entity = this.context.UserTable.FirstOrDefault();
@@ -148,7 +190,11 @@ namespace DataLayer.Service
             }
             else return null;
         }
-
+        /// <summary>
+        /// Retriving all registered Users by ID
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         public UserEntity GetAllUsersbyID(long userId)
         {
             UserEntity entity = new UserEntity();
@@ -158,7 +204,7 @@ namespace DataLayer.Service
                 return entity;
             }
             else return null;
+        
         }
-
     }
 }

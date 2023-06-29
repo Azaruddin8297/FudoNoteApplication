@@ -28,7 +28,6 @@ namespace FundoNoteApplication.Controllers
             this.logger = logger;
         }
         [HttpPost]
-        [Route("register")]
         public IActionResult register(UserRegistration userRegistration)
         {
             try
@@ -105,8 +104,7 @@ namespace FundoNoteApplication.Controllers
         public IActionResult ResetPassword(string password, string confirmPassword)
         {
             try
-            {
-              
+            {             
                 var email = User.Claims.FirstOrDefault(e => e.Type == "Email").Value;
                 var result = userBL.ResetPassword(email, password, confirmPassword);
                 if(result != null)
@@ -126,8 +124,7 @@ namespace FundoNoteApplication.Controllers
             }
         }
 
-        [HttpGet]
-        [Route("GetAllUsers")]
+        [HttpGet]       
         public IActionResult GetAllUsers()
         {
             try
@@ -150,7 +147,7 @@ namespace FundoNoteApplication.Controllers
         }
 
         [HttpGet]
-        [Route("GetAllUsersbyID")]
+        [Route("ByID")]
         public IActionResult GetAllUsersbyID(long userid)
         {
             try

@@ -15,6 +15,13 @@ namespace DataLayer.Service
         {
             this.context = context;
         }
+        /// <summary>
+        /// This Method is Used for Creating the Labels
+        /// </summary>
+        /// <param name="notesId"></param>
+        /// <param name="jwtUserId"></param>
+        /// <param name="model"></param>
+        /// <returns></returns>
         public ResponseLable CreateLable(long notesId, long jwtUserId, LableModel model)
         {
             try
@@ -47,6 +54,10 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// This Method is Used to get all Lables
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<LabelEntity> GetAllLable()
         {
             try
@@ -60,6 +71,12 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// This Method is Used to Update the Tables
+        /// </summary>
+        /// <param name="lableid"></param>
+        /// <param name="model"></param>
+        /// <returns></returns>
         public ResponseLable UpdateLable( long lableid,UpdateLabelModel model)
         {
             try
@@ -86,6 +103,11 @@ namespace DataLayer.Service
                 throw;
             }
         }
+        /// <summary>
+        /// This Method is Used for Deleting the Lables
+        /// </summary>
+        /// <param name="labelID"></param>
+        /// <returns></returns>
         public LabelEntity DeleteLable(long labelID)
         {
             try
